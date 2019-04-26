@@ -1,6 +1,6 @@
 # Swift
 
-# Cusotm Popup
+# Cusotm Popup (Reusable Popup)
 1. Reusable Custom Popups
 2. Passing Data to Your Popup View Controller
 3. NotificationCenter Tutorial - Passing Data Between View Controllers
