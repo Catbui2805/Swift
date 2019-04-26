@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QjI-rR-rwx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Popup View Controller-->
+        <scene sceneID="3EJ-dL-91h">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="QjI-rR-rwx" customClass="DatePopupViewController" customModule="ReusablePopups" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZ7-D1-QRM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcK-9Y-jpA">
+                                <rect key="frame" x="62" y="318" width="290" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSm-NV-6SG">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="50"/>
+                                        <color key="backgroundColor" red="0.21887370049698038" green="0.47927575068262268" blue="0.74472557106598991" alpha="0.64816994863013699" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hlo-k8-bjn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PxD-z3-Tys">
+                                        <rect key="frame" x="0.0" y="58" width="290" height="156"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="577983967.76506197">
+                                            <!--2019-04-26 15:06:07 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoG-tB-9Gl">
+                                        <rect key="frame" x="106" y="222" width="78" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="UEt-WP-DKj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Save Date"/>
+                                        <connections>
+                                            <action selector="saveDateTapped:" destination="QjI-rR-rwx" eventType="touchUpInside" id="m9s-oZ-NkF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FSm-NV-6SG" firstAttribute="top" secondItem="mcK-9Y-jpA" secondAttribute="top" id="3Cv-oc-lIK"/>
+                                    <constraint firstItem="FSm-NV-6SG" firstAttribute="top" secondItem="mcK-9Y-jpA" secondAttribute="top" id="7T1-4j-oYQ"/>
+                                    <constraint firstItem="eoG-tB-9Gl" firstAttribute="bottom" secondItem="mcK-9Y-jpA" secondAttribute="bottomMargin" id="HYW-9p-NHu"/>
+                                    <constraint firstAttribute="trailing" secondItem="PxD-z3-Tys" secondAttribute="trailing" id="LsI-dE-For"/>
+                                    <constraint firstItem="PxD-z3-Tys" firstAttribute="top" secondItem="FSm-NV-6SG" secondAttribute="bottom" constant="8" id="Oxn-G5-Tfe"/>
+                                    <constraint firstItem="eoG-tB-9Gl" firstAttribute="top" secondItem="PxD-z3-Tys" secondAttribute="bottom" constant="8" id="fLt-Ag-7vZ"/>
+                                    <constraint firstItem="eoG-tB-9Gl" firstAttribute="centerX" secondItem="FSm-NV-6SG" secondAttribute="centerX" id="iAu-0z-vkR"/>
+                                    <constraint firstAttribute="trailing" secondItem="FSm-NV-6SG" secondAttribute="trailing" id="sAf-7d-xfq"/>
+                                    <constraint firstItem="eoG-tB-9Gl" firstAttribute="centerX" secondItem="mcK-9Y-jpA" secondAttribute="centerX" id="v2n-pE-BjE"/>
+                                    <constraint firstItem="PxD-z3-Tys" firstAttribute="leading" secondItem="mcK-9Y-jpA" secondAttribute="leading" id="zJx-ew-4Kx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50505631345177671" green="0.50505631345177671" blue="0.50505631345177671" alpha="0.48488334760273971" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="mcK-9Y-jpA" firstAttribute="leading" secondItem="ocF-67-lnf" secondAttribute="leading" constant="62" id="02K-ea-kcf"/>
+                            <constraint firstItem="mcK-9Y-jpA" firstAttribute="centerY" secondItem="zZ7-D1-QRM" secondAttribute="centerY" id="Jfe-4E-THl"/>
+                            <constraint firstItem="mcK-9Y-jpA" firstAttribute="top" secondItem="ocF-67-lnf" secondAttribute="top" constant="274" id="LMd-12-Ckl"/>
+                            <constraint firstItem="mcK-9Y-jpA" firstAttribute="centerX" secondItem="zZ7-D1-QRM" secondAttribute="centerX" id="bXY-1b-aWG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ocF-67-lnf"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataPicker" destination="PxD-z3-Tys" id="q8e-P6-umq"/>
+                        <outlet property="saveButton" destination="eoG-tB-9Gl" id="tAh-cc-nOQ"/>
+                        <outlet property="titilePopupLable" destination="FSm-NV-6SG" id="oyZ-cC-RVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFV-we-TwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="42"/>
+        </scene>
+    </scenes>
+</document>

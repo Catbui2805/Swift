@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F56C51E6227354BA00D28C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C51E5227354BA00D28C56 /* AppDelegate.swift */; };
+		F56C51E8227354BA00D28C56 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C51E7227354BA00D28C56 /* FirstViewController.swift */; };
+		F56C51EA227354BA00D28C56 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C51E9227354BA00D28C56 /* SecondViewController.swift */; };
+		F56C51ED227354BA00D28C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56C51EB227354BA00D28C56 /* Main.storyboard */; };
+		F56C51EF227354BB00D28C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56C51EE227354BB00D28C56 /* Assets.xcassets */; };
+		F56C51F2227354BB00D28C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56C51F0227354BB00D28C56 /* LaunchScreen.storyboard */; };
+		F56C51FA2273573900D28C56 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C51F92273573900D28C56 /* DatePopupViewController.swift */; };
+		F56C51FD22735D9C00D28C56 /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56C51FB22735D9C00D28C56 /* DatePopupViewController.storyboard */; };
+		F56C51FF22735DE400D28C56 /* SelectTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */; };
+		F56C520122735E1A00D28C56 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F56C51E2227354BA00D28C56 /* ReusablePopups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusablePopups.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56C51E5227354BA00D28C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F56C51E7227354BA00D28C56 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F56C51E9227354BA00D28C56 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F56C51EC227354BA00D28C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F56C51EE227354BB00D28C56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F56C51F1227354BB00D28C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F56C51F3227354BB00D28C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56C51F92273573900D28C56 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
+		F56C51FC22735D9C00D28C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReusablePopups/Base.lproj/DatePopupViewController.storyboard; sourceTree = "<group>"; };
+		F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTimeViewController.storyboard; sourceTree = "<group>"; };
+		F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F56C51DF227354BA00D28C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F56C51D9227354BA00D28C56 = {
+			isa = PBXGroup;
+			children = (
+				F56C51E4227354BA00D28C56 /* ReusablePopups */,
+				F56C51E3227354BA00D28C56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F56C51E3227354BA00D28C56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F56C51E2227354BA00D28C56 /* ReusablePopups.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F56C51E4227354BA00D28C56 /* ReusablePopups */ = {
+			isa = PBXGroup;
+			children = (
+				F56C51E5227354BA00D28C56 /* AppDelegate.swift */,
+				F56C51E7227354BA00D28C56 /* FirstViewController.swift */,
+				F56C51E9227354BA00D28C56 /* SecondViewController.swift */,
+				F56C51EB227354BA00D28C56 /* Main.storyboard */,
+				F56C51EE227354BB00D28C56 /* Assets.xcassets */,
+				F56C51F0227354BB00D28C56 /* LaunchScreen.storyboard */,
+				F56C51FB22735D9C00D28C56 /* DatePopupViewController.storyboard */,
+				F56C51F3227354BB00D28C56 /* Info.plist */,
+				F56C51F92273573900D28C56 /* DatePopupViewController.swift */,
+				F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */,
+				F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */,
+			);
+			path = ReusablePopups;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F56C51E1227354BA00D28C56 /* ReusablePopups */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56C51F6227354BB00D28C56 /* Build configuration list for PBXNativeTarget "ReusablePopups" */;
+			buildPhases = (
+				F56C51DE227354BA00D28C56 /* Sources */,
+				F56C51DF227354BA00D28C56 /* Frameworks */,
+				F56C51E0227354BA00D28C56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReusablePopups;
+			productName = ReusablePopups;
+			productReference = F56C51E2227354BA00D28C56 /* ReusablePopups.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F56C51DA227354BA00D28C56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Nguyen Tran";
+				TargetAttributes = {
+					F56C51E1227354BA00D28C56 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F56C51DD227354BA00D28C56 /* Build configuration list for PBXProject "ReusablePopups" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F56C51D9227354BA00D28C56;
+			productRefGroup = F56C51E3227354BA00D28C56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F56C51E1227354BA00D28C56 /* ReusablePopups */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F56C51E0227354BA00D28C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56C51F2227354BB00D28C56 /* LaunchScreen.storyboard in Resources */,
+				F56C51FF22735DE400D28C56 /* SelectTimeViewController.storyboard in Resources */,
+				F56C51EF227354BB00D28C56 /* Assets.xcassets in Resources */,
+				F56C51FD22735D9C00D28C56 /* DatePopupViewController.storyboard in Resources */,
+				F56C51ED227354BA00D28C56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F56C51DE227354BA00D28C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56C51EA227354BA00D28C56 /* SecondViewController.swift in Sources */,
+				F56C520122735E1A00D28C56 /* SelectTimeViewController.swift in Sources */,
+				F56C51FA2273573900D28C56 /* DatePopupViewController.swift in Sources */,
+				F56C51E6227354BA00D28C56 /* AppDelegate.swift in Sources */,
+				F56C51E8227354BA00D28C56 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F56C51EB227354BA00D28C56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56C51EC227354BA00D28C56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F56C51F0227354BB00D28C56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56C51F1227354BB00D28C56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F56C51FB22735D9C00D28C56 /* DatePopupViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56C51FC22735D9C00D28C56 /* Base */,
+			);
+			name = DatePopupViewController.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F56C51F4227354BB00D28C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F56C51F5227354BB00D28C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F56C51F7227354BB00D28C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReusablePopups/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nguyentran.ReusablePopups;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F56C51F8227354BB00D28C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReusablePopups/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nguyentran.ReusablePopups;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F56C51DD227354BA00D28C56 /* Build configuration list for PBXProject "ReusablePopups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56C51F4227354BB00D28C56 /* Debug */,
+				F56C51F5227354BB00D28C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56C51F6227354BB00D28C56 /* Build configuration list for PBXNativeTarget "ReusablePopups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56C51F7227354BB00D28C56 /* Debug */,
+				F56C51F8227354BB00D28C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F56C51DA227354BA00D28C56 /* Project object */;
+}
