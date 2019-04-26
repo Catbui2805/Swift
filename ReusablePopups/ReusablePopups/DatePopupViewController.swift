@@ -11,15 +11,21 @@ import UIKit
 class DatePopupViewController: UIViewController {
 
     @IBOutlet weak var titilePopupLable: UILabel!
-    @IBOutlet weak var dataPicker: UIDatePicker!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var saveButton: UIButton!
     
+    var showTimePicker: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if showTimePicker {
+            titilePopupLable.text = "Select Time demo segue"
+            datePicker.datePickerMode = .time
+            saveButton.setTitle("Save Time", for: .normal)
+        }
 
     }
-    
     
     @IBAction func saveDateTapped(_ sender: UIButton) {
         

@@ -12,9 +12,15 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDatePopupViewControllerSegue" {
+            let popup = segue.destination as! DatePopupViewController
+            popup.showTimePicker = false
+        }
+    }
 
 }
 

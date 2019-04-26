@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QjI-rR-rwx">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +15,7 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="QjI-rR-rwx" customClass="DatePopupViewController" customModule="ReusablePopups" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zZ7-D1-QRM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcK-9Y-jpA">
@@ -70,7 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="ocF-67-lnf"/>
                     </view>
                     <connections>
-                        <outlet property="dataPicker" destination="PxD-z3-Tys" id="q8e-P6-umq"/>
+                        <outlet property="datePicker" destination="PxD-z3-Tys" id="qw1-pF-QoC"/>
                         <outlet property="saveButton" destination="eoG-tB-9Gl" id="tAh-cc-nOQ"/>
                         <outlet property="titilePopupLable" destination="FSm-NV-6SG" id="oyZ-cC-RVd"/>
                     </connections>
