@@ -14,6 +14,10 @@ class DatePopupViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var saveButton: UIButton!
     
+    //callback function
+    var onSave: ((_ data: String) -> ())?
+    
+    
     var showTimePicker: Bool = false
     var formatterDate: String {
         get {
@@ -46,6 +50,13 @@ class DatePopupViewController: UIViewController {
     @IBAction func saveDateTapped(_ sender: UIButton) {
 //        NotificationCenter.default.post(name: Notification.Name.saveDateTime, object: self)
         NotificationCenter.default.post(name: .saveDateTime, object: self)
+        
+        //send data
+        if showTimePicker {
+            onSave?(formatterTime)
+        } else {
+            onSave?(formatterDate)
+        }
         dismiss(animated: true)
     }
     
