@@ -18,9 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yY-Lq-UcB">
-                                <rect key="frame" x="313" y="44" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yY-Lq-UcB">
+                                <rect key="frame" x="294" y="52" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MaK-4T-LpA"/>
+                                    <constraint firstAttribute="width" constant="100" id="si9-Ku-7QV"/>
+                                </constraints>
                                 <state key="normal" title="Select Time"/>
                                 <connections>
                                     <action selector="selectTimeTapped:" destination="exz-MD-y9U" eventType="touchUpInside" id="YSG-4v-eyq"/>
@@ -28,6 +31,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0SS-4h-SZV" firstAttribute="trailing" secondItem="8yY-Lq-UcB" secondAttribute="trailing" constant="20" id="BQ4-DL-zxN"/>
+                            <constraint firstItem="8yY-Lq-UcB" firstAttribute="top" secondItem="0SS-4h-SZV" secondAttribute="top" constant="8" id="wfu-JQ-MwZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0SS-4h-SZV"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="SQ8-it-PnG"/>

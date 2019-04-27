@@ -17,6 +17,7 @@
 		F56C51FD22735D9C00D28C56 /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56C51FB22735D9C00D28C56 /* DatePopupViewController.storyboard */; };
 		F56C51FF22735DE400D28C56 /* SelectTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */; };
 		F56C520122735E1A00D28C56 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */; };
+		F56C520322744F5100D28C56 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C520222744F5100D28C56 /* NotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F56C51FC22735D9C00D28C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReusablePopups/Base.lproj/DatePopupViewController.storyboard; sourceTree = "<group>"; };
 		F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTimeViewController.storyboard; sourceTree = "<group>"; };
 		F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+		F56C520222744F5100D28C56 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				F56C51F92273573900D28C56 /* DatePopupViewController.swift */,
 				F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */,
 				F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */,
+				F56C520222744F5100D28C56 /* NotificationNameExtension.swift */,
 			);
 			path = ReusablePopups;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				F56C51EA227354BA00D28C56 /* SecondViewController.swift in Sources */,
 				F56C520122735E1A00D28C56 /* SelectTimeViewController.swift in Sources */,
 				F56C51FA2273573900D28C56 /* DatePopupViewController.swift in Sources */,
+				F56C520322744F5100D28C56 /* NotificationNameExtension.swift in Sources */,
 				F56C51E6227354BA00D28C56 /* AppDelegate.swift in Sources */,
 				F56C51E8227354BA00D28C56 /* FirstViewController.swift in Sources */,
 			);
@@ -311,14 +315,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44QZYM48R7;
 				INFOPLIST_FILE = ReusablePopups/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nguyentran.ReusablePopups;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -328,14 +334,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44QZYM48R7;
 				INFOPLIST_FILE = ReusablePopups/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nguyentran.ReusablePopups;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
