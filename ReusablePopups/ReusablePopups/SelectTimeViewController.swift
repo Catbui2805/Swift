@@ -12,10 +12,10 @@ class SelectTimeViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
     
+    weak var popup: DatePopupViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 }
 
@@ -23,8 +23,8 @@ class SelectTimeViewController: UIViewController {
 extension SelectTimeViewController {
     @IBAction func selectTimeTapped(_ sender: UIButton) {
         let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
-        let popup = sb.instantiateInitialViewController() as! DatePopupViewController
-        popup.showTimePicker = true
+        popup = sb.instantiateInitialViewController() as? DatePopupViewController
+        popup?.showTimePicker = true
         
         //delegate
 //        popup.delegate = self
@@ -32,13 +32,14 @@ extension SelectTimeViewController {
         
         // callback function
         // case 1. Assign to a function
-        popup.onSave = onSave
+//        popup.onSave = onSave
         // case 2. Use a Closure
-//        popup.onSave = { (data: String) -> () in
-//            self.dateLabel.text = data
-//        }
+        popup?.onSave = { [weak self] (data: String) -> () in
+            self?.dateLabel.text = data
+            self?.popup = nil
+        }
         
-        self.present(popup, animated: true)
+        self.present(self.popup!, animated: true)
     }
     
     //callback function // Todo: in here

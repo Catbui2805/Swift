@@ -11,6 +11,9 @@ import UIKit
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
+    
+    weak var popup: DatePopupViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,10 +21,10 @@ class SecondViewController: UIViewController {
     
     @IBAction func selectTimeTapped(_ sender: UIButton) {
         let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
-        let popup = sb.instantiateInitialViewController() as! DatePopupViewController
-        popup.showTimePicker = true
-        popup.delegate = self
-        self.present(popup, animated: true)
+        popup = sb.instantiateInitialViewController() as? DatePopupViewController
+        popup?.showTimePicker = true
+        popup?.delegate = self
+        self.present(popup!, animated: true)
     }
 }
 
@@ -29,6 +32,8 @@ class SecondViewController: UIViewController {
 extension SecondViewController: PopupDelegate {
     func popupValueSelected(value: String) {
         timeLabel.text = value
+//        popup?.delegate = nil
+        popup = nil
     }
 }
 

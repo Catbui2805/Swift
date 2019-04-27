@@ -18,7 +18,7 @@ class DatePopupViewController: UIViewController {
     var onSave: ((_ data: String) -> ())?
     
     //delegate
-    var delegate: PopupDelegate?
+    weak var delegate: PopupDelegate?
     
     var showTimePicker: Bool = false
     var formatterDate: String {
@@ -34,7 +34,6 @@ class DatePopupViewController: UIViewController {
         get {
             let formatter = DateFormatter()
             formatter.timeStyle = .medium
-            print(formatter.string(from: datePicker.date))
             return formatter.string(from: datePicker.date)
         }
     }
@@ -66,6 +65,10 @@ class DatePopupViewController: UIViewController {
             delegate?.popupValueSelected(value: formatterDate)
         }
         dismiss(animated: true)
+    }
+    
+    deinit {
+        print("DatePopupViewController was de-initialized")
     }
     
 }
