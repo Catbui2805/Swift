@@ -9,26 +9,26 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
-    var observer: NSObjectProtocol?
     
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let observer = observer {
-            NotificationCenter.default.removeObserver(observer)
-        }
+        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notification) in
-            let dateVc = notification.object as! DatePopupViewController
-            self.dateLabel.text = dateVc.formatterDate
-        }
+    @IBAction func selectTimeTapped(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
+        let popup = sb.instantiateInitialViewController() as! DatePopupViewController
+        popup.showTimePicker = true
+        popup.delegate = self
+        self.present(popup, animated: true)
     }
+}
 
+// MARK: - delegate popup
+extension SecondViewController: PopupDelegate {
+    func popupValueSelected(value: String) {
+        timeLabel.text = value
+    }
 }
 

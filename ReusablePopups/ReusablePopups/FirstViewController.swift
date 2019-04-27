@@ -27,8 +27,9 @@ class FirstViewController: UIViewController {
 //        let dateVc = notification.object as! DatePopupViewController
 //        dateLabel.text = dateVc.formatterDate
 //    }
-        // 2. NOTIFICATION: New way
         
+        
+        // clease observer
         if let observer = observer {
             NotificationCenter.default.removeObserver(observer)
         }
@@ -36,12 +37,13 @@ class FirstViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // 2. NOTIFICATION: New way
         observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main, using: { (notification) in
             let dateVc = notification.object as! DatePopupViewController
             self.dateLabel.text = dateVc.formatterDate
         })
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDatePopupViewControllerSegue" {
@@ -49,6 +51,5 @@ class FirstViewController: UIViewController {
             popup.showTimePicker = false
         }
     }
-
 }
 

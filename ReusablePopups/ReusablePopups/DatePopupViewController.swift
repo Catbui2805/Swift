@@ -17,6 +17,8 @@ class DatePopupViewController: UIViewController {
     //callback function
     var onSave: ((_ data: String) -> ())?
     
+    //delegate
+    var delegate: PopupDelegate?
     
     var showTimePicker: Bool = false
     var formatterDate: String {
@@ -31,7 +33,8 @@ class DatePopupViewController: UIViewController {
     var formatterTime: String {
         get {
             let formatter = DateFormatter()
-            formatter.timeStyle = .short
+            formatter.timeStyle = .medium
+            print(formatter.string(from: datePicker.date))
             return formatter.string(from: datePicker.date)
         }
     }
@@ -48,14 +51,19 @@ class DatePopupViewController: UIViewController {
     }
     
     @IBAction func saveDateTapped(_ sender: UIButton) {
+        //send data by NotificationCenter
 //        NotificationCenter.default.post(name: Notification.Name.saveDateTime, object: self)
         NotificationCenter.default.post(name: .saveDateTime, object: self)
         
         //send data
         if showTimePicker {
+            // by Callbacks function
             onSave?(formatterTime)
+            // by delegate/protocal
+            delegate?.popupValueSelected(value: formatterTime)
         } else {
             onSave?(formatterDate)
+            delegate?.popupValueSelected(value: formatterDate)
         }
         dismiss(animated: true)
     }

@@ -24,17 +24,18 @@
                                     <constraint firstAttribute="height" constant="40" id="MaK-4T-LpA"/>
                                     <constraint firstAttribute="width" constant="100" id="si9-Ku-7QV"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Select Time"/>
                                 <connections>
                                     <action selector="selectTimeTapped:" destination="exz-MD-y9U" eventType="touchUpInside" id="YSG-4v-eyq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passing data with callback function" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-xC-jaE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Callbacks Function" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-xC-jaE">
                                 <rect key="frame" x="0.0" y="428" width="414" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mQG-7B-AE9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -18,6 +18,7 @@
 		F56C51FF22735DE400D28C56 /* SelectTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */; };
 		F56C520122735E1A00D28C56 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */; };
 		F56C520322744F5100D28C56 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C520222744F5100D28C56 /* NotificationNameExtension.swift */; };
+		F56C520522746EC400D28C56 /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C520422746EC400D28C56 /* PopupDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTimeViewController.storyboard; sourceTree = "<group>"; };
 		F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
 		F56C520222744F5100D28C56 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		F56C520422746EC400D28C56 /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				F56C51FE22735DE400D28C56 /* SelectTimeViewController.storyboard */,
 				F56C520022735E1A00D28C56 /* SelectTimeViewController.swift */,
 				F56C520222744F5100D28C56 /* NotificationNameExtension.swift */,
+				F56C520422746EC400D28C56 /* PopupDelegate.swift */,
 			);
 			path = ReusablePopups;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56C520522746EC400D28C56 /* PopupDelegate.swift in Sources */,
 				F56C51EA227354BA00D28C56 /* SecondViewController.swift in Sources */,
 				F56C520122735E1A00D28C56 /* SelectTimeViewController.swift in Sources */,
 				F56C51FA2273573900D28C56 /* DatePopupViewController.swift in Sources */,

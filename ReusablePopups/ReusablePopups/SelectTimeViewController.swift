@@ -25,6 +25,11 @@ extension SelectTimeViewController {
         let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
         let popup = sb.instantiateInitialViewController() as! DatePopupViewController
         popup.showTimePicker = true
+        
+        //delegate
+//        popup.delegate = self
+        
+        
         // callback function
         // case 1. Assign to a function
         popup.onSave = onSave
@@ -41,3 +46,10 @@ extension SelectTimeViewController {
         dateLabel.text = data
     }
 }
+
+// recive form delegate
+//extension SelectTimeViewController: PopupDelegate {
+//    func popupValueSelected(value: String) {
+//        dateLabel.text = value
+//    }
+//}
