@@ -28,10 +28,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1v-a4-Ua6">
-                                <rect key="frame" x="-150" y="88" width="150" height="808"/>
+                                <rect key="frame" x="-200" y="88" width="200" height="808"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq9-Z1-UjT">
-                                        <rect key="frame" x="16" y="8" width="118" height="30"/>
+                                        <rect key="frame" x="16" y="8" width="168" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="POg-sV-6GC"/>
                                         </constraints>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gv-wP-4Ua">
-                                        <rect key="frame" x="16" y="46" width="118" height="30"/>
+                                        <rect key="frame" x="16" y="46" width="168" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="aPh-Cn-1Zh"/>
                                         </constraints>
@@ -55,20 +55,25 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15799911843858319" green="0.35498315755603993" blue="0.56692449967873282" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="eq9-Z1-UjT" firstAttribute="top" secondItem="f1v-a4-Ua6" secondAttribute="top" constant="8" id="4o5-Vt-fjX"/>
                                     <constraint firstAttribute="trailing" secondItem="6gv-wP-4Ua" secondAttribute="trailing" constant="16" id="6Bt-yb-t3j"/>
                                     <constraint firstItem="eq9-Z1-UjT" firstAttribute="leading" secondItem="f1v-a4-Ua6" secondAttribute="leading" constant="16" id="C1M-Mm-in8"/>
                                     <constraint firstAttribute="trailing" secondItem="eq9-Z1-UjT" secondAttribute="trailing" constant="16" id="IqA-B1-xGX"/>
                                     <constraint firstItem="6gv-wP-4Ua" firstAttribute="top" secondItem="eq9-Z1-UjT" secondAttribute="bottom" constant="8" id="fVn-FH-BtK"/>
-                                    <constraint firstAttribute="width" constant="150" id="hpd-oE-9QI"/>
+                                    <constraint firstAttribute="width" constant="200" id="hpd-oE-9QI"/>
                                     <constraint firstItem="6gv-wP-4Ua" firstAttribute="leading" secondItem="f1v-a4-Ua6" secondAttribute="leading" constant="16" id="ymu-J7-faJ"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8h9-ME-awa" appends="YES" id="qZi-3V-55Q"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.078107461601911218" green="0.17548726614516813" blue="0.28026126998330125" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="f1v-a4-Ua6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-150" id="6xd-3I-UEK"/>
+                            <constraint firstItem="f1v-a4-Ua6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-200" id="6xd-3I-UEK"/>
                             <constraint firstItem="f1v-a4-Ua6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QCG-rm-qvP"/>
                             <constraint firstItem="4Wc-bM-gwc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XIy-xA-p0a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Wc-bM-gwc" secondAttribute="trailing" constant="20" id="b0e-YA-t0x"/>
@@ -76,6 +81,10 @@
                             <constraint firstItem="4Wc-bM-gwc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="zBl-yw-RYH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="7Ti-Nl-ZPg" appends="YES" id="tMr-Xi-rBN"/>
+                            <outletCollection property="gestureRecognizers" destination="Bn9-1B-XOa" appends="YES" id="K8M-hk-Iv9"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Mune Example" id="e8r-ZI-OjD">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="organize" id="ZtW-vr-sKp">
@@ -90,6 +99,22 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="7Ti-Nl-ZPg">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="gestureLeft:" destination="BYZ-38-t0r" id="kXY-FI-9Wn"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="8h9-ME-awa">
+                    <connections>
+                        <action selector="swipeGestureLeft:" destination="BYZ-38-t0r" id="TBX-oA-YaB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="Bn9-1B-XOa">
+                    <connections>
+                        <action selector="tapGestureRcognizerOneClick:" destination="BYZ-38-t0r" id="N5L-hl-58P"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="-536.38392857142856"/>
         </scene>

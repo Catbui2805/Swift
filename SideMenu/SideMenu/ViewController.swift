@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func openMenu(_ sender: Any) {
         if menuShowing {
-            leadingConstraint.constant = -150
+            leadingConstraint.constant = -200
             UIView.animate(withDuration: 0.3) {
                 self.view.layoutIfNeeded()
             }
@@ -33,6 +33,41 @@ class ViewController: UIViewController {
             }
         }
         menuShowing = !menuShowing
+    }
+    
+    // tapped edge left
+    @IBAction func gestureLeft(_ sender: Any) {
+        if !menuShowing {
+            leadingConstraint.constant = 0
+            UIView.animate(withDuration: 0.3) {
+                self.view.layoutIfNeeded()
+            }
+            menuShowing = !menuShowing
+        }
+    }
+    
+    // tapped to view controller
+    @IBAction func tapGestureRcognizerOneClick(_ sender: Any) {
+        if menuShowing {
+            leadingConstraint.constant = -200
+            UIView.animate(withDuration: 0.3) {
+                self.view.layoutIfNeeded()
+            }
+            menuShowing = !menuShowing
+        }
+    }
+    
+    
+    
+    // swipe gesture recognizer left
+    @IBAction func swipeGestureLeft(_ sender: Any) {
+        if menuShowing {
+            leadingConstraint.constant = -200
+            UIView.animate(withDuration: 0.3) {
+                self.view.layoutIfNeeded()
+            }
+            menuShowing = !menuShowing
+        }
     }
     
 }
