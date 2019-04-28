@@ -12,6 +12,12 @@
 		F511CDD42275BEBD00E120BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F511CDD22275BEBD00E120BE /* Main.storyboard */; };
 		F511CDD62275BEBD00E120BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F511CDD52275BEBD00E120BE /* Assets.xcassets */; };
 		F511CDD92275BEBD00E120BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F511CDD72275BEBD00E120BE /* LaunchScreen.storyboard */; };
+		F511CDE12275BF5C00E120BE /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511CDE02275BF5C00E120BE /* QuestionModel.swift */; };
+		F511CDE52275C42900E120BE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511CDE42275C42900E120BE /* QuizViewController.swift */; };
+		F511CDE72275EB2200E120BE /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511CDE62275EB2200E120BE /* PopupViewController.swift */; };
+		F511CDE92275EEB500E120BE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511CDE82275EEB500E120BE /* DataService.swift */; };
+		F511CDEB22762A4100E120BE /* StudySwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511CDEA22762A4100E120BE /* StudySwiftViewController.swift */; };
+		F511CDEF22763CA300E120BE /* TutorialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511CDEE22763CA300E120BE /* TutorialModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		F511CDD52275BEBD00E120BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F511CDD82275BEBD00E120BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F511CDDA2275BEBD00E120BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F511CDE02275BF5C00E120BE /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		F511CDE42275C42900E120BE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		F511CDE62275EB2200E120BE /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		F511CDE82275EEB500E120BE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F511CDEA22762A4100E120BE /* StudySwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySwiftViewController.swift; sourceTree = "<group>"; };
+		F511CDEE22763CA300E120BE /* TutorialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		F511CDCD2275BEBD00E120BE /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				F511CDE32275C40000E120BE /* ViewController */,
+				F511CDE22275BF6100E120BE /* Model */,
 				F511CDCE2275BEBD00E120BE /* AppDelegate.swift */,
 				F511CDD02275BEBD00E120BE /* ViewController.swift */,
 				F511CDD22275BEBD00E120BE /* Main.storyboard */,
@@ -62,6 +76,26 @@
 				F511CDDA2275BEBD00E120BE /* Info.plist */,
 			);
 			path = SwiftQuiz;
+			sourceTree = "<group>";
+		};
+		F511CDE22275BF6100E120BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F511CDEE22763CA300E120BE /* TutorialModel.swift */,
+				F511CDE02275BF5C00E120BE /* QuestionModel.swift */,
+				F511CDE82275EEB500E120BE /* DataService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F511CDE32275C40000E120BE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F511CDE42275C42900E120BE /* QuizViewController.swift */,
+				F511CDE62275EB2200E120BE /* PopupViewController.swift */,
+				F511CDEA22762A4100E120BE /* StudySwiftViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F511CDE72275EB2200E120BE /* PopupViewController.swift in Sources */,
+				F511CDEB22762A4100E120BE /* StudySwiftViewController.swift in Sources */,
+				F511CDE92275EEB500E120BE /* DataService.swift in Sources */,
+				F511CDE12275BF5C00E120BE /* QuestionModel.swift in Sources */,
 				F511CDD12275BEBD00E120BE /* ViewController.swift in Sources */,
+				F511CDEF22763CA300E120BE /* TutorialModel.swift in Sources */,
 				F511CDCF2275BEBD00E120BE /* AppDelegate.swift in Sources */,
+				F511CDE52275C42900E120BE /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44QZYM48R7;
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44QZYM48R7;
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

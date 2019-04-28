@@ -10,21 +10,23 @@ import UIKit
 
 class PopupViewController: UIViewController {
 
+    @IBOutlet weak var messageTitle: UILabel!
+    @IBOutlet weak var popupView: UIView!
+    @IBOutlet weak var popTextContentLabel: UILabel!
+    @IBOutlet weak var yesBt: UIButton!
+    @IBOutlet weak var noBt: UIButton!
+    
+    var messageTitleText: String?
+    var message: String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        popupView.layer.cornerRadius = 10
+        yesBt.layer.cornerRadius = 10
+        noBt.layer.cornerRadius = 10
+        popTextContentLabel.layer.cornerRadius = 10
+        messageTitle.text = "\(messageTitleText ?? "Start quiz")"
+        popTextContentLabel.text = "\(message ?? "Are you aready ?")"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

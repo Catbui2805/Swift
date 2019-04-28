@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var startQuizbt: UIButton!
+    @IBOutlet weak var studybt: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        startQuizbt.layer.cornerRadius = 10
+        studybt.layer.cornerRadius = 10
     }
-
-
 }
 
