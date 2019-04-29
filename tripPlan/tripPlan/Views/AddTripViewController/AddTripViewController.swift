@@ -29,7 +29,29 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func saveTapped(_ sender: Any) {
-        TripFuctions.createTrip(tripModel: TripModel(title: addTripTextField.text!))
+        addTripTextField.rightViewMode = .never
+        
+        guard addTripTextField.text != "", let newTripName = addTripTextField.text else {
+//            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 40))
+//            imageView.image = UIImage(named: "Warning")
+//            imageView.contentMode = .scaleAspectFit
+//            addTripTextField.rightView = imageView
+//            addTripTextField.rightViewMode = .always
+            
+            // Alterlatives
+            
+//            addTripTextField.backgroundColor = UIColor.red
+            
+            addTripTextField.layer.borderColor = UIColor.red.cgColor
+            addTripTextField.layer.borderWidth = 1
+            addTripTextField.layer.cornerRadius = 10
+            
+            
+            
+            return
+        }
+        
+        TripFuctions.createTrip(tripModel: TripModel(title: newTripName))
         if let doneSaving = doneSaving {
             doneSaving()
         }
