@@ -14,6 +14,9 @@ class TripsViewController: UIViewController {
     @IBOutlet weak var addButton: FloatingActionButton!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet var helpView: UIVisualEffectView!
+    
+    let seenHelpView = "seenHelpView"
     var tripIndexToEdit: Int?
     
     override func viewDidLoad() {
@@ -22,10 +25,20 @@ class TripsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        TripFuctions.readTrip { [weak self] in
+        TripFuctions.readTrip { [unowned self] in
             // completion
-            self?.tableView.reloadData()
+            self.tableView.reloadData()
+            
+            if Data.tripModels.count > 0 {
+                if UserDefaults.standard.bool(forKey: self.seenHelpView) == false {
+                    self.view.addSubview(self.helpView)
+                    self.helpView.frame = self.view.frame
+                }
+            }
+            
         }
+        
+
     }
     
     // Reload tableView when add trip
@@ -39,6 +52,16 @@ class TripsViewController: UIViewController {
             tripIndexToEdit = nil
         }
     }
+    
+    @IBAction func closeHelpView(_ sender: Any) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.helpView.alpha = 0
+        }) { (success) in
+            self.helpView.removeFromSuperview()
+            UserDefaults.standard.set(true, forKey: self.seenHelpView)
+        }
+    }
+    
     
 }
 

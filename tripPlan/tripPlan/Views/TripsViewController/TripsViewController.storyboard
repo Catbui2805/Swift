@@ -98,10 +98,71 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="bR0-Sa-bYM" id="Mne-cN-g42"/>
+                        <outlet property="helpView" destination="dt6-sR-T1Q" id="KWu-Ga-Tfd"/>
                         <outlet property="tableView" destination="mGZ-eK-ES7" id="Eaa-NM-Vlf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yA-2g-Hfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="dt6-sR-T1Q">
+                    <rect key="frame" x="0.0" y="0.0" width="419" height="540"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ToM-4C-gVX">
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="540"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EHL-VA-t7s">
+                                <rect key="frame" x="59.666666666666657" y="99" width="300" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe rows for more features!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mdU-SS-8KK">
+                                        <rect key="frame" x="52.666666666666671" y="0.0" width="194.66666666666663" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="ffY-fx-2lo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeDelete" translatesAutoresizingMaskIntoConstraints="NO" id="T7p-JK-QVx">
+                                        <rect key="frame" x="30" y="78" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="HjA-Uc-gS3"/>
+                                            <constraint firstAttribute="width" constant="240" id="q6p-SM-Jp6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeEdit" translatesAutoresizingMaskIntoConstraints="NO" id="71O-jA-rLM">
+                                        <rect key="frame" x="30" y="214" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="QGu-Bk-8YN"/>
+                                            <constraint firstAttribute="height" constant="128" id="lxY-St-eKc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7Pq-hN-bcv"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kA1-AX-mSC" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
+                                <rect key="frame" x="40" y="470" width="339" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dr0-ag-aqx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeHelpView:" destination="fjg-e8-mm5" eventType="touchUpInside" id="P7R-mS-1AP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="kA1-AX-mSC" firstAttribute="leading" secondItem="ToM-4C-gVX" secondAttribute="leading" constant="40" id="L4c-x2-0Re"/>
+                            <constraint firstAttribute="trailing" secondItem="kA1-AX-mSC" secondAttribute="trailing" constant="40" id="OWq-lD-hzl"/>
+                            <constraint firstItem="EHL-VA-t7s" firstAttribute="centerX" secondItem="ToM-4C-gVX" secondAttribute="centerX" id="TH0-76-nmL"/>
+                            <constraint firstItem="EHL-VA-t7s" firstAttribute="centerY" secondItem="ToM-4C-gVX" secondAttribute="centerY" id="eiL-jd-Ahl"/>
+                            <constraint firstAttribute="bottom" secondItem="kA1-AX-mSC" secondAttribute="bottom" constant="30" id="hAB-SC-pNB"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
             </objects>
             <point key="canvasLocation" x="242.0289855072464" y="218.47826086956525"/>
         </scene>
@@ -116,5 +177,7 @@
     </scenes>
     <resources>
         <image name="baseline_add_black_36pt" width="36" height="36"/>
+        <image name="swipeDelete" width="588" height="246"/>
+        <image name="swipeEdit" width="588" height="252"/>
     </resources>
 </document>
