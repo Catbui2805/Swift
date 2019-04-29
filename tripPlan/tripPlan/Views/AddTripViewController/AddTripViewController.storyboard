@@ -18,32 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRi-jF-mge" customClass="PopupUIView" customModule="tripPlan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="181"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRi-jF-mge" customClass="PopupUIView" customModule="tripPlan" customModuleProvider="target">
+                                <rect key="frame" x="20" y="54" width="374" height="146"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XFl-po-QR0">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="146"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-aL-dew">
-                                        <rect key="frame" x="20" y="8" width="334" height="40"/>
+                                        <rect key="frame" x="20" y="8" width="256" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Yyv-K6-fa5"/>
+                                            <constraint firstAttribute="height" constant="38" id="Yyv-K6-fa5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nj-CI-Fsw">
-                                        <rect key="frame" x="20" y="64" width="334" height="45"/>
+                                        <rect key="frame" x="20" y="54" width="334" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="iGw-SK-WVb"/>
+                                            <constraint firstAttribute="height" constant="38" id="iGw-SK-WVb"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6S-xk-dDX" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="125" width="100" height="40"/>
+                                        <rect key="frame" x="20" y="100" width="100" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="BSS-eF-ZHQ"/>
-                                            <constraint firstAttribute="height" constant="40" id="JK9-Ae-EPy"/>
+                                            <constraint firstAttribute="height" constant="38" id="JK9-Ae-EPy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="Cancel"/>
@@ -52,10 +55,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-2g-oX3" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="254" y="125" width="100" height="40"/>
+                                        <rect key="frame" x="254" y="100" width="100" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="5av-mn-DPs"/>
-                                            <constraint firstAttribute="height" constant="40" id="SmM-OA-YKl"/>
+                                            <constraint firstAttribute="height" constant="38" id="SmM-OA-YKl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="Save"/>
@@ -63,17 +66,37 @@
                                             <action selector="saveTapped:" destination="MJd-Be-JL6" eventType="touchUpInside" id="uTb-Se-vHr"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-wI-iSY">
+                                        <rect key="frame" x="284" y="4" width="70" height="46"/>
+                                        <color key="backgroundColor" red="0.75256206941313941" green="0.91921168565750122" blue="0.72375705607291174" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="d7m-NC-1Fe"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" image="camera"/>
+                                        <connections>
+                                            <action selector="addPhoto:" destination="MJd-Be-JL6" eventType="touchUpInside" id="055-gV-TNg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="7Nj-CI-Fsw" firstAttribute="top" secondItem="vWc-aL-dew" secondAttribute="bottom" constant="16" id="08l-vF-RHY"/>
+                                    <constraint firstItem="7Nj-CI-Fsw" firstAttribute="top" secondItem="vWc-aL-dew" secondAttribute="bottom" constant="8" id="08l-vF-RHY"/>
                                     <constraint firstAttribute="trailing" secondItem="7Nj-CI-Fsw" secondAttribute="trailing" constant="20" id="0UM-NT-J7m"/>
-                                    <constraint firstAttribute="bottom" secondItem="l6S-xk-dDX" secondAttribute="bottom" constant="16" id="8Yb-vj-GbR"/>
+                                    <constraint firstItem="7Nj-CI-Fsw" firstAttribute="top" secondItem="hvQ-wI-iSY" secondAttribute="bottom" constant="4" id="21e-yO-Tl3"/>
+                                    <constraint firstAttribute="bottom" secondItem="l6S-xk-dDX" secondAttribute="bottom" constant="8" id="8Yb-vj-GbR"/>
+                                    <constraint firstItem="XFl-po-QR0" firstAttribute="leading" secondItem="GRi-jF-mge" secondAttribute="leading" id="A9i-Lh-kMJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="XFl-po-QR0" secondAttribute="bottom" id="DjF-QF-JTi"/>
+                                    <constraint firstAttribute="trailing" secondItem="XFl-po-QR0" secondAttribute="trailing" id="EcL-zW-GnA"/>
+                                    <constraint firstItem="XFl-po-QR0" firstAttribute="top" secondItem="GRi-jF-mge" secondAttribute="top" id="OF5-Sp-C3n"/>
                                     <constraint firstItem="vWc-aL-dew" firstAttribute="leading" secondItem="GRi-jF-mge" secondAttribute="leading" constant="20" id="RE4-wH-pXi"/>
-                                    <constraint firstItem="4Q8-2g-oX3" firstAttribute="top" secondItem="7Nj-CI-Fsw" secondAttribute="bottom" constant="16" id="Uq3-JK-WV6"/>
+                                    <constraint firstItem="hvQ-wI-iSY" firstAttribute="top" secondItem="GRi-jF-mge" secondAttribute="top" constant="4" id="RLh-pz-i67"/>
+                                    <constraint firstItem="hvQ-wI-iSY" firstAttribute="leading" secondItem="vWc-aL-dew" secondAttribute="trailing" constant="8" id="SZ7-1r-FhK"/>
+                                    <constraint firstAttribute="trailing" secondItem="hvQ-wI-iSY" secondAttribute="trailing" constant="20" id="TsA-2h-wjf"/>
+                                    <constraint firstItem="4Q8-2g-oX3" firstAttribute="top" secondItem="7Nj-CI-Fsw" secondAttribute="bottom" constant="8" id="Uq3-JK-WV6"/>
                                     <constraint firstAttribute="trailing" secondItem="4Q8-2g-oX3" secondAttribute="trailing" constant="20" id="c9V-qI-Q3D"/>
-                                    <constraint firstItem="l6S-xk-dDX" firstAttribute="top" secondItem="7Nj-CI-Fsw" secondAttribute="bottom" constant="16" id="ivO-6A-L0R"/>
-                                    <constraint firstAttribute="trailing" secondItem="vWc-aL-dew" secondAttribute="trailing" constant="20" id="oCa-v7-ixd"/>
+                                    <constraint firstItem="l6S-xk-dDX" firstAttribute="top" secondItem="7Nj-CI-Fsw" secondAttribute="bottom" constant="8" id="ivO-6A-L0R"/>
                                     <constraint firstItem="l6S-xk-dDX" firstAttribute="leading" secondItem="GRi-jF-mge" secondAttribute="leading" constant="20" id="puB-hj-noa"/>
                                     <constraint firstItem="vWc-aL-dew" firstAttribute="top" secondItem="GRi-jF-mge" secondAttribute="top" constant="8" id="wYJ-lH-Ui4"/>
                                     <constraint firstItem="7Nj-CI-Fsw" firstAttribute="leading" secondItem="GRi-jF-mge" secondAttribute="leading" constant="20" id="waH-JW-s16"/>
@@ -84,13 +107,15 @@
                         <constraints>
                             <constraint firstItem="GRi-jF-mge" firstAttribute="leading" secondItem="MpS-9p-VXI" secondAttribute="leading" constant="20" id="5eN-F8-DDp"/>
                             <constraint firstItem="MpS-9p-VXI" firstAttribute="trailing" secondItem="GRi-jF-mge" secondAttribute="trailing" constant="20" id="OXw-7k-uhb"/>
-                            <constraint firstItem="GRi-jF-mge" firstAttribute="top" secondItem="MpS-9p-VXI" secondAttribute="top" id="oLu-wa-9dL"/>
+                            <constraint firstItem="GRi-jF-mge" firstAttribute="top" secondItem="MpS-9p-VXI" secondAttribute="top" constant="10" id="oLu-wa-9dL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MpS-9p-VXI"/>
                     </view>
                     <connections>
                         <outlet property="addTripTextField" destination="7Nj-CI-Fsw" id="P0N-BS-rTD"/>
+                        <outlet property="cameraBt" destination="hvQ-wI-iSY" id="I9D-65-IOB"/>
                         <outlet property="cancelBt" destination="l6S-xk-dDX" id="e8D-sg-aFk"/>
+                        <outlet property="imageView" destination="XFl-po-QR0" id="zJb-kh-w9y"/>
                         <outlet property="saveBt" destination="4Q8-2g-oX3" id="052-YO-gsu"/>
                         <outlet property="titleLabel" destination="vWc-aL-dew" id="dZC-o5-MmD"/>
                     </connections>
@@ -100,4 +125,7 @@
             <point key="canvasLocation" x="886.95652173913049" y="244.41964285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="50" height="50"/>
+    </resources>
 </document>

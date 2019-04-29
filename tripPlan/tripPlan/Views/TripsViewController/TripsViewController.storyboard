@@ -18,20 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mGZ-eK-ES7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mGZ-eK-ES7">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="7go-WV-ZWa" customClass="TripsTableViewCell" customModule="tripPlan" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="7go-WV-ZWa" customClass="TripsTableViewCell" customModule="tripPlan" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7go-WV-ZWa" id="8cA-6L-NIY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="159.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvc-ZS-z39">
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvc-ZS-z39">
                                                     <rect key="frame" x="20" y="10" width="374" height="139.66666666666666"/>
                                                     <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-BB-46E">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="139.66666666666666"/>
+                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-tx-4A8">
                                                             <rect key="frame" x="0.0" y="39" width="374" height="60"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
@@ -41,6 +44,12 @@
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.084918852510000004" green="0.19687842850000001" blue="0.31418543780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstItem="8pq-BB-46E" firstAttribute="top" secondItem="Kvc-ZS-z39" secondAttribute="top" id="EWR-mw-qLb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="8pq-BB-46E" secondAttribute="bottom" id="Suo-HL-laT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8pq-BB-46E" secondAttribute="trailing" id="Zkh-kK-vlr"/>
+                                                        <constraint firstItem="8pq-BB-46E" firstAttribute="leading" secondItem="Kvc-ZS-z39" secondAttribute="leading" id="iy8-qW-jaj"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -54,6 +63,7 @@
                                         <connections>
                                             <outlet property="cardView" destination="Kvc-ZS-z39" id="McL-oT-wVV"/>
                                             <outlet property="titleLabel" destination="2YF-tx-4A8" id="Hnv-hs-eCL"/>
+                                            <outlet property="tripImageView" destination="8pq-BB-46E" id="AaG-IN-Ov1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -11,6 +11,7 @@ import UIKit
 class TripsTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var tripImageView: UIImageView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -18,10 +19,12 @@ class TripsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         cardView.addShadowAndRoundedCorner()
+        tripImageView.layer.cornerRadius = cardView.layer.cornerRadius
     }
     
     func setup(tripModel: TripModel){
         titleLabel.text = tripModel.title
+        tripImageView.image = tripModel.image
     }
 
 }
