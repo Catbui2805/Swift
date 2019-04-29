@@ -36,6 +36,7 @@ class AddTripViewController: UIViewController {
             let trip = Data.tripModels[index]
             addTripTextField.text = trip.title
             imageView.image = trip.image
+            titleLabel.text = "Edit Trip"
         }
         
     }
