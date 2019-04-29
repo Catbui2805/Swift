@@ -13,6 +13,8 @@
 		F5FB13E72276DC33008782F9 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13E62276DC33008782F9 /* TripModel.swift */; };
 		F5FB13E92276DC45008782F9 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13E82276DC45008782F9 /* TripFunctions.swift */; };
 		F5FB13EB2276DD8E008782F9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13EA2276DD8E008782F9 /* Data.swift */; };
+		F5FB13EF2276E208008782F9 /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13EE2276E208008782F9 /* TripsViewController.storyboard */; };
+		F5FB13F12276E225008782F9 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13F02276E225008782F9 /* TripsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F5FB13E62276DC33008782F9 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F5FB13E82276DC45008782F9 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		F5FB13EA2276DD8E008782F9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F5FB13EE2276E208008782F9 /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
+		F5FB13F02276E225008782F9 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F5FB13E42276DC09008782F9 /* Model */,
+				F5FB13EC2276E196008782F9 /* Views */,
 				F5FB13D22276D605008782F9 /* AppDelegate.swift */,
 				F5FB13D92276D607008782F9 /* Assets.xcassets */,
 				F5FB13DB2276D607008782F9 /* LaunchScreen.storyboard */,
@@ -68,8 +73,8 @@
 		F5FB13E42276DC09008782F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F5FB13E52276DC12008782F9 /* Trip */,
 				F5FB13EA2276DD8E008782F9 /* Data.swift */,
+				F5FB13E52276DC12008782F9 /* Trip */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +86,23 @@
 				F5FB13E82276DC45008782F9 /* TripFunctions.swift */,
 			);
 			path = Trip;
+			sourceTree = "<group>";
+		};
+		F5FB13EC2276E196008782F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB13ED2276E1AA008782F9 /* TripsViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5FB13ED2276E1AA008782F9 /* TripsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB13EE2276E208008782F9 /* TripsViewController.storyboard */,
+				F5FB13F02276E225008782F9 /* TripsViewController.swift */,
+			);
+			path = TripsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */,
+				F5FB13EF2276E208008782F9 /* TripsViewController.storyboard in Resources */,
 				F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +180,7 @@
 				F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */,
 				F5FB13E92276DC45008782F9 /* TripFunctions.swift in Sources */,
 				F5FB13EB2276DD8E008782F9 /* Data.swift in Sources */,
+				F5FB13F12276E225008782F9 /* TripsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
