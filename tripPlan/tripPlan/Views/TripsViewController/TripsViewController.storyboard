@@ -71,7 +71,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1JV-8n-eog" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="t5I-OU-TwE"/>
+                                    <segue destination="1JV-8n-eog" kind="presentation" identifier="toAddTripSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="t5I-OU-TwE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,7 +101,7 @@
                 <viewControllerPlaceholder storyboardName="AddTripViewController" id="1JV-8n-eog" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yM-CT-9Xa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808" y="237"/>
+            <point key="canvasLocation" x="809" y="218"/>
         </scene>
     </scenes>
     <resources>

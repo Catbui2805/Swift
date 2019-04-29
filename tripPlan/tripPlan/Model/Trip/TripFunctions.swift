@@ -10,7 +10,7 @@ import Foundation
 
 class TripFuctions {
     static func createTrip(tripModel: TripModel) {
-        
+        Data.tripModels.append(tripModel)
     }
     
     static func readTrip(completion: @escaping () -> ()) {
@@ -19,7 +19,6 @@ class TripFuctions {
                 Data.tripModels.append(TripModel(title: "Trip to Bali!"))
                 Data.tripModels.append(TripModel(title: "Trip to Mexico!"))
                 Data.tripModels.append(TripModel(title: "Trip to Vietnam!"))
-                Data.tripModels.append(TripModel(title: "Trip to Lao!"))
             }
         }
         

@@ -20,12 +20,22 @@ class TripsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-//        addButton.createFloatingActionButton()
         TripFuctions.readTrip { [weak self] in
             // completion
             self?.tableView.reloadData()
         }
     }
+    
+    // Reload tableView when add trip
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAddTripSegue" {
+            let popup = segue.destination as! AddTripViewController
+            popup.doneSaving = { [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
+    }
+    
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
