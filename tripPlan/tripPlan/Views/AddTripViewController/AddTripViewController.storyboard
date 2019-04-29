@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MJd-Be-JL6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Trip View Controller-->
+        <scene sceneID="QX1-Yj-sHc">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="MJd-Be-JL6" customClass="AddTripViewController" customModule="tripPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hC-CF-eel">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRi-jF-mge" customClass="PopupUIView" customModule="tripPlan" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="374" height="181"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-aL-dew">
+                                        <rect key="frame" x="20" y="8" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Yyv-K6-fa5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nj-CI-Fsw">
+                                        <rect key="frame" x="20" y="64" width="334" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="iGw-SK-WVb"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6S-xk-dDX" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="125" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="BSS-eF-ZHQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="JK9-Ae-EPy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelTaped:" destination="MJd-Be-JL6" eventType="touchUpInside" id="KYx-5a-E3g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-2g-oX3" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
+                                        <rect key="frame" x="254" y="125" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="5av-mn-DPs"/>
+                                            <constraint firstAttribute="height" constant="40" id="SmM-OA-YKl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveTapped:" destination="MJd-Be-JL6" eventType="touchUpInside" id="uTb-Se-vHr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7Nj-CI-Fsw" firstAttribute="top" secondItem="vWc-aL-dew" secondAttribute="bottom" constant="16" id="08l-vF-RHY"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Nj-CI-Fsw" secondAttribute="trailing" constant="20" id="0UM-NT-J7m"/>
+                                    <constraint firstAttribute="bottom" secondItem="l6S-xk-dDX" secondAttribute="bottom" constant="16" id="8Yb-vj-GbR"/>
+                                    <constraint firstItem="vWc-aL-dew" firstAttribute="leading" secondItem="GRi-jF-mge" secondAttribute="leading" constant="20" id="RE4-wH-pXi"/>
+                                    <constraint firstItem="4Q8-2g-oX3" firstAttribute="top" secondItem="7Nj-CI-Fsw" secondAttribute="bottom" constant="16" id="Uq3-JK-WV6"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Q8-2g-oX3" secondAttribute="trailing" constant="20" id="c9V-qI-Q3D"/>
+                                    <constraint firstItem="l6S-xk-dDX" firstAttribute="top" secondItem="7Nj-CI-Fsw" secondAttribute="bottom" constant="16" id="ivO-6A-L0R"/>
+                                    <constraint firstAttribute="trailing" secondItem="vWc-aL-dew" secondAttribute="trailing" constant="20" id="oCa-v7-ixd"/>
+                                    <constraint firstItem="l6S-xk-dDX" firstAttribute="leading" secondItem="GRi-jF-mge" secondAttribute="leading" constant="20" id="puB-hj-noa"/>
+                                    <constraint firstItem="vWc-aL-dew" firstAttribute="top" secondItem="GRi-jF-mge" secondAttribute="top" constant="8" id="wYJ-lH-Ui4"/>
+                                    <constraint firstItem="7Nj-CI-Fsw" firstAttribute="leading" secondItem="GRi-jF-mge" secondAttribute="leading" constant="20" id="waH-JW-s16"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1579991184" green="0.35498315759999999" blue="0.56692449970000003" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="GRi-jF-mge" firstAttribute="leading" secondItem="MpS-9p-VXI" secondAttribute="leading" constant="20" id="5eN-F8-DDp"/>
+                            <constraint firstItem="MpS-9p-VXI" firstAttribute="trailing" secondItem="GRi-jF-mge" secondAttribute="trailing" constant="20" id="OXw-7k-uhb"/>
+                            <constraint firstItem="GRi-jF-mge" firstAttribute="top" secondItem="MpS-9p-VXI" secondAttribute="top" id="oLu-wa-9dL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MpS-9p-VXI"/>
+                    </view>
+                    <connections>
+                        <outlet property="addTripTextField" destination="7Nj-CI-Fsw" id="P0N-BS-rTD"/>
+                        <outlet property="cancelBt" destination="l6S-xk-dDX" id="e8D-sg-aFk"/>
+                        <outlet property="saveBt" destination="4Q8-2g-oX3" id="052-YO-gsu"/>
+                        <outlet property="titleLabel" destination="vWc-aL-dew" id="dZC-o5-MmD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDE-0M-FDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="244.41964285714283"/>
+        </scene>
+    </scenes>
+</document>

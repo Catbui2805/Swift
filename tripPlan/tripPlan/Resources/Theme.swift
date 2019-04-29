@@ -8,11 +8,16 @@
 
 import UIKit
 
-@available(iOS 11.0, *)
+
 class Theme {
     static let mainFontName = ""
-    
+//
 //    static let accent = UIColor(named: "Accent")
-//    static let background = UIColor(named: "Background")
-//    static let tint = UIColor(named: "Tint")
+//    static let backgroundColor = UIColor(named: "Background")
+//    static let tintColor = UIColor(named: "Tint")
+//
+    static let accent = UIColor.blue
+    static let backgroundColor = UIColor.white
+    static let tintColor = UIColor.red
+    
 }
