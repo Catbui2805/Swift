@@ -16,6 +16,10 @@
 		F5FB13EF2276E208008782F9 /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13EE2276E208008782F9 /* TripsViewController.storyboard */; };
 		F5FB13F12276E225008782F9 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13F02276E225008782F9 /* TripsViewController.swift */; };
 		F5FB13F32276EBED008782F9 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13F22276EBED008782F9 /* TripsTableViewCell.swift */; };
+		F5FB13F62276F1F8008782F9 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13F52276F1F8008782F9 /* UIViewExtensions.swift */; };
+		F5FB13F92276F3B1008782F9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13F82276F3B1008782F9 /* Theme.swift */; };
+		F5FB13FD22770F24008782F9 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13FC22770F24008782F9 /* UIButtonExtention.swift */; };
+		F5FB13FF22770FF8008782F9 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13FE22770FF8008782F9 /* FloatingActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		F5FB13EE2276E208008782F9 /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
 		F5FB13F02276E225008782F9 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		F5FB13F22276EBED008782F9 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		F5FB13F52276F1F8008782F9 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		F5FB13F82276F3B1008782F9 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F5FB13FC22770F24008782F9 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
+		F5FB13FE22770FF8008782F9 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 		F5FB13D12276D605008782F9 /* tripPlan */ = {
 			isa = PBXGroup;
 			children = (
+				F5FB13F72276F395008782F9 /* Resources */,
+				F5FB13F42276F1CD008782F9 /* Extensions */,
 				F5FB13E42276DC09008782F9 /* Model */,
 				F5FB13EC2276E196008782F9 /* Views */,
 				F5FB13D22276D605008782F9 /* AppDelegate.swift */,
@@ -106,6 +116,24 @@
 				F5FB13F22276EBED008782F9 /* TripsTableViewCell.swift */,
 			);
 			path = TripsViewController;
+			sourceTree = "<group>";
+		};
+		F5FB13F42276F1CD008782F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB13F52276F1F8008782F9 /* UIViewExtensions.swift */,
+				F5FB13FC22770F24008782F9 /* UIButtonExtention.swift */,
+				F5FB13FE22770FF8008782F9 /* FloatingActionButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5FB13F72276F395008782F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB13F82276F3B1008782F9 /* Theme.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +208,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5FB13F32276EBED008782F9 /* TripsTableViewCell.swift in Sources */,
+				F5FB13F92276F3B1008782F9 /* Theme.swift in Sources */,
+				F5FB13F62276F1F8008782F9 /* UIViewExtensions.swift in Sources */,
 				F5FB13E72276DC33008782F9 /* TripModel.swift in Sources */,
 				F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */,
+				F5FB13FD22770F24008782F9 /* UIButtonExtention.swift in Sources */,
 				F5FB13E92276DC45008782F9 /* TripFunctions.swift in Sources */,
+				F5FB13FF22770FF8008782F9 /* FloatingActionButton.swift in Sources */,
 				F5FB13EB2276DD8E008782F9 /* Data.swift in Sources */,
 				F5FB13F12276E225008782F9 /* TripsViewController.swift in Sources */,
 			);
