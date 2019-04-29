@@ -14,6 +14,8 @@ class TripsViewController: UIViewController {
     @IBOutlet weak var addButton: FloatingActionButton!
     @IBOutlet weak var tableView: UITableView!
     
+    var tripIndexToEdit: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +32,7 @@ class TripsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toAddTripSegue" {
             let popup = segue.destination as! AddTripViewController
+            popup.tripIndexToEdit = tripIndexToEdit
             popup.doneSaving = { [weak self] in
                 self?.tableView.reloadData()
             }
@@ -62,7 +65,7 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
             let alert = UIAlertController(title: "Delete Trip", message: "Are you sure you want to delete this trip: \(trip.title)?", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alerAction) in
-                actionPerformed(true)
+                actionPerformed(false)
             }))
             alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (alerAction) in
                 //Perform delete
@@ -77,6 +80,13 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
         return UISwipeActionsConfiguration(actions: [delete])
     }
     
-    
-    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let edit = UIContextualAction(style: .normal, title: "Edit") { (contextualAction, view, actionPerformed: (Bool) -> ()) in
+            self.tripIndexToEdit = indexPath.row
+            self.performSegue(withIdentifier: "toAddTripSegue", sender: nil)
+        }
+        edit.backgroundColor = UIColor.blue
+        edit.image = UIImage(named: "edit")
+        return UISwipeActionsConfiguration(actions: [edit])
+    }
 }
