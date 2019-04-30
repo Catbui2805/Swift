@@ -12,6 +12,7 @@ class ActivitiesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var addButton: AppUIButton!
     
     var tripId: UUID!
     var tripTitle = ""
@@ -21,6 +22,8 @@ class ActivitiesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = tripTitle
+        addButton.createFloatingActionButton()
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -38,6 +41,25 @@ class ActivitiesViewController: UIViewController {
         headerInSection = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell")?.contentView.bounds.height ?? 0
     }
     
+    @IBAction func addTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Which would you like to add?", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
+        let dayAction = UIAlertAction(title: "Day", style: UIAlertAction.Style.default) { (action) in
+            print("Add day action")
+        }
+        let activityAction = UIAlertAction(title: "Activity", style: UIAlertAction.Style.default, handler: { (action) in
+            print("Add activity action")
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: { (action) in
+            print("Cancel")
+        })
+        
+        alert.addAction(dayAction)
+        alert.addAction(activityAction)
+        alert.addAction(cancelAction)
+        alert.view.tintColor = Theme.tintColor
+        present(alert, animated: true)
+    }
+
     @IBAction func backToTripsViewController(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

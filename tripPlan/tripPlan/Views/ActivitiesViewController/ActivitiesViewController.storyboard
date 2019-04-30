@@ -137,13 +137,31 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFO-WH-tiN" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
+                                <rect key="frame" x="334" y="782" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Aj-8N-Mvh"/>
+                                    <constraint firstAttribute="width" constant="60" id="k3W-XK-3Dc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTapped:" destination="HYv-YP-2vX" eventType="touchUpInside" id="Z9L-zL-Vrj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gkm-Rn-Mla" firstAttribute="leading" secondItem="DJu-di-wgK" secondAttribute="leading" id="19o-qN-tZJ"/>
                             <constraint firstItem="T9O-6L-wTE" firstAttribute="top" secondItem="UZZ-Kf-HTQ" secondAttribute="top" id="H55-4p-h8X"/>
                             <constraint firstAttribute="bottom" secondItem="T9O-6L-wTE" secondAttribute="bottom" id="J7E-Po-0v5"/>
+                            <constraint firstItem="DJu-di-wgK" firstAttribute="trailing" secondItem="zFO-WH-tiN" secondAttribute="trailing" constant="20" id="JRO-nU-WiN"/>
                             <constraint firstItem="gkm-Rn-Mla" firstAttribute="trailing" secondItem="DJu-di-wgK" secondAttribute="trailing" id="gkB-2B-Znb"/>
+                            <constraint firstItem="DJu-di-wgK" firstAttribute="bottom" secondItem="zFO-WH-tiN" secondAttribute="bottom" constant="20" id="iCW-Fa-cw7"/>
                             <constraint firstItem="gkm-Rn-Mla" firstAttribute="top" secondItem="DJu-di-wgK" secondAttribute="top" id="q8r-jN-uEf"/>
                             <constraint firstItem="T9O-6L-wTE" firstAttribute="leading" secondItem="UZZ-Kf-HTQ" secondAttribute="leading" id="tSC-CY-tDb"/>
                             <constraint firstItem="T9O-6L-wTE" firstAttribute="trailing" secondItem="UZZ-Kf-HTQ" secondAttribute="trailing" id="wsV-Aq-YZP"/>
@@ -152,6 +170,7 @@
                         <viewLayoutGuide key="safeArea" id="DJu-di-wgK"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="zFO-WH-tiN" id="Vv3-7s-vHK"/>
                         <outlet property="backgroundImage" destination="T9O-6L-wTE" id="BOv-d6-Yy6"/>
                         <outlet property="tableView" destination="gkm-Rn-Mla" id="XHj-Xo-CX4"/>
                     </connections>
@@ -163,5 +182,7 @@
     </scenes>
     <resources>
         <image name="Car" width="48" height="48"/>
+        <image name="add" width="36" height="36"/>
     </resources>
+    <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

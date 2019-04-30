@@ -27,20 +27,17 @@ class TripsViewController: UIViewController {
         
         title = "Trips"
         self.navigationController?.navigationBar.barTintColor = Theme.accentColor
+
         TripFuctions.readTrips { [unowned self] in
             // completion
-            self.tableView.reloadData()
-            
             if Data.tripModels.count > 0 {
                 if UserDefaults.standard.bool(forKey: self.seenHelpView) == false {
                     self.view.addSubview(self.helpView)
-                    self.helpView.frame = self.view.frame
+                    self.helpView.frame = self.view.bounds
                 }
             }
-            
+            self.tableView.reloadData()
         }
-        
-        
     }
     
     // Reload tableView when add trip

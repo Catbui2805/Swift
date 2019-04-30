@@ -11,7 +11,6 @@ import UIKit
 class FloatingActionButton: UIButton {
 
     override func draw(_ rect: CGRect) {
-                backgroundColor = Theme.tintColor
                 layer.cornerRadius = frame.height / 2
                 layer.shadowOpacity = 0.25
                 layer.shadowRadius = 5
