@@ -16,7 +16,7 @@ class HeaderTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        titleLabel.font = UIFont(name: Theme.bodyFontFameBold, size: 17)
+        titleLabel.font = UIFont(name: Theme.bodyFontNameBold, size: 17)
         subTitleLabel.font = UIFont(name: Theme.bodyFontName, size: 15)
     }
     

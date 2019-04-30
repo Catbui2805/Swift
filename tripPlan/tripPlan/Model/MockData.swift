@@ -12,7 +12,7 @@ import Foundation
 class MockData {
     static func createMockTripModelData() -> [TripModel] {
         var mockTrips = [TripModel]()
-        mockTrips.append(TripModel(title: "Trip to Vietnam", image: nil, dayModels: createmockDayModelData()))
+        mockTrips.append(TripModel(title: "Trip to Vietnam", image: UIImage(named: "example"), dayModels: createmockDayModelData()))
         mockTrips.append(TripModel(title: "Thailand", image: nil))
         return mockTrips
     }
@@ -29,7 +29,7 @@ class MockData {
         var models = [ActivityModel]()
         switch sectionTitle {
         case "April 18":
-            models.append(ActivityModel(title: "SLC", subTitle: "12:25 - 13:45", activityType: ActivityType.flight, photo: UIImage(named: "delete")))
+            models.append(ActivityModel(title: "SLC", subTitle: "12:25 - 13:45", activityType: ActivityType.flight, photo: UIImage(named: "flight")))
             models.append(ActivityModel(title: "LAX", subTitle: "17:00 - 11:00", activityType: ActivityType.flight))
         case "April 19":
             models.append(ActivityModel(title: "DPS", subTitle: "", activityType: ActivityType.flight))

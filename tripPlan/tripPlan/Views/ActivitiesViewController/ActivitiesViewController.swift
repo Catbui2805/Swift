@@ -59,22 +59,20 @@ extension ActivitiesViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell.contentView
     }
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        let title = tripModel?.dayModels[section].title ?? ""
-//        let subtitle = tripModel?.dayModels[section].subtitle ?? ""
-//
-//        return "\(title) - \(subtitle)"
-//    }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tripModel?.dayModels[section].activityModels.count ?? 0
     }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 72
+//    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ActivityTableViewCell
+        if let model = tripModel?.dayModels[indexPath.section].activityModels[indexPath.row] {
+            cell.setup(model: model)
         }
-        cell?.textLabel?.text = tripModel?.dayModels[indexPath.section].activityModels[indexPath.row].title
-        return cell!
+        return cell
     }
 }

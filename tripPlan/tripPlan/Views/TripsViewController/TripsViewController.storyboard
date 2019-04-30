@@ -77,7 +77,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="baseline_add_black_36pt">
+                                <state key="normal" backgroundImage="baseline_add_white_36dp">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -195,7 +195,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="baseline_add_black_36pt" width="36" height="36"/>
+        <image name="baseline_add_white_36dp" width="36" height="36"/>
         <image name="swipeDelete" width="588" height="246"/>
         <image name="swipeEdit" width="588" height="252"/>
     </resources>
