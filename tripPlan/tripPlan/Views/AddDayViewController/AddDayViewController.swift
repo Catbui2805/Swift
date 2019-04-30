@@ -17,7 +17,7 @@ class AddDayViewController: UIViewController {
     @IBOutlet weak var saveBt: UIButton!
     @IBOutlet weak var cancelButton: AppUIButton!
     
-    var doneSaving: (() -> ())?
+    var doneSaving: ((DayModel) -> ())?
     var tripIndex: Int!
     
     override func viewDidLoad() {
@@ -36,9 +36,8 @@ class AddDayViewController: UIViewController {
         }
         let dayModel = DayModel(title: newTitle, subtitle: subTitleTextField.text ?? "", data: nil)
         DayFunctions.createDay(at: tripIndex, dayModel: dayModel)
-        
         if let doneSaving = doneSaving {
-            doneSaving()
+            doneSaving(dayModel)
         }
         dismiss(animated: true)
     }

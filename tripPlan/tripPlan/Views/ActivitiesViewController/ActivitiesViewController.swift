@@ -70,11 +70,14 @@ class ActivitiesViewController: UIViewController {
         vc.tripIndex = Data.tripModels.firstIndex(where: { (tripModel) -> Bool in
             tripModel.id == tripId
         })
-        vc.doneSaving = { [weak self] in
+        vc.doneSaving = { [weak self] (dayModel) in
             guard let self = self else {
                 return
             }
-            self.updateTableViewWithTripDate() 
+            
+//            self.tripModel?.dayModels.append(dayModel) //
+            let indexArray = [self.tripModel?.dayModels.count != nil ? (self.tripModel?.dayModels.count)! - 1 : 0]
+            self.tableView.insertSections(IndexSet(indexArray), with: UITableView.RowAnimation.automatic)
         }
         present(vc, animated: true)
     }
