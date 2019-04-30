@@ -19,6 +19,7 @@
 		F508BEB72278B3F300650887 /* AddDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEB62278B3F300650887 /* AddDayViewController.swift */; };
 		F508BEB92278B40600650887 /* AddDayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F508BEB82278B40600650887 /* AddDayViewController.storyboard */; };
 		F508BEBB2278BC8900650887 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEBA2278BC8900650887 /* UIViewControllerExtension.swift */; };
+		F508BEBD2278BF6C00650887 /* UITextFielExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEBC2278BF6C00650887 /* UITextFielExtension.swift */; };
 		F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13D22276D605008782F9 /* AppDelegate.swift */; };
 		F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13D92276D607008782F9 /* Assets.xcassets */; };
 		F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13DB2276D607008782F9 /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		F508BEB62278B3F300650887 /* AddDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayViewController.swift; sourceTree = "<group>"; };
 		F508BEB82278B40600650887 /* AddDayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDayViewController.storyboard; sourceTree = "<group>"; };
 		F508BEBA2278BC8900650887 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		F508BEBC2278BF6C00650887 /* UITextFielExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFielExtension.swift; sourceTree = "<group>"; };
 		F5FB13CF2276D605008782F9 /* tripPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB13D22276D605008782F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB13D92276D607008782F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				F5FB13FC22770F24008782F9 /* UIButtonExtention.swift */,
 				F508BEB32278995300650887 /* UITableViewExtension.swift */,
 				F508BEBA2278BC8900650887 /* UIViewControllerExtension.swift */,
+				F508BEBC2278BF6C00650887 /* UITextFielExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				F508BEB42278995300650887 /* UITableViewExtension.swift in Sources */,
 				F508BEB72278B3F300650887 /* AddDayViewController.swift in Sources */,
 				F5FB13F32276EBED008782F9 /* TripsTableViewCell.swift in Sources */,
+				F508BEBD2278BF6C00650887 /* UITextFielExtension.swift in Sources */,
 				F5FB13F92276F3B1008782F9 /* Theme.swift in Sources */,
 				F508BEB222785F9800650887 /* ActivityTableViewCell.swift in Sources */,
 				F508BEB022783D3700650887 /* HeaderTableViewCell.swift in Sources */,

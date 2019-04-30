@@ -33,6 +33,6 @@ class TripsTableViewCell: UITableViewCell {
                 self.tripImageView.alpha = 1
             }
         }
-    } 
+    }
 
 }

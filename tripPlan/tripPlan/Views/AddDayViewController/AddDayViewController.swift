@@ -22,14 +22,6 @@ class AddDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        // dropshadow on title
-        titleLabel.layer.shadowOpacity = 1
-        titleLabel.layer.shadowColor = UIColor.white.cgColor
-        titleLabel.layer.shadowOffset = CGSize.zero
-        titleLabel.layer.shadowRadius = 5
-
         
     }
     
@@ -38,17 +30,10 @@ class AddDayViewController: UIViewController {
     }
     
     @IBAction func saveTapped(_ sender: Any) {
-        titleTextField.rightViewMode = .never
         
-        guard titleTextField.text != "", let newTripName = titleTextField.text else {
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 40))
-            imageView.image = UIImage(named: "Warning")
-            imageView.contentMode = .scaleAspectFit
-            titleTextField.rightView = imageView
-            titleTextField.rightViewMode = .always
+        guard titleTextField.hasValue, let newTitle = titleTextField.text else {
             return
         }
-        
         
         if let doneSaving = doneSaving {
             doneSaving()
