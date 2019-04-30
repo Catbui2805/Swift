@@ -22,7 +22,7 @@ class MockData {
         dayModels.append(DayModel(title: Date().addDay(day: 2), subtitle: "Exploring", data: createMockActivityModelData(sectionTitle: "April 19")))
         dayModels.append(DayModel(title: Date().addDay(day: 3), subtitle: "Scuba Diving!", data: createMockActivityModelData(sectionTitle: "April 20")))
         dayModels.append(DayModel(title: Date().addDay(day: 4), subtitle: "Volunteering", data: createMockActivityModelData(sectionTitle: "April 21")))
-        dayModels.append(DayModel(title: Date().addDay(day: 5), subtitle: "Time to go back home", data: createMockActivityModelData(sectionTitle: "April 22")))
+        dayModels.append(DayModel(title: Date().addDay(day: 5), subtitle: "Time to go back home Time to go back home", data: createMockActivityModelData(sectionTitle: "April 22")))
         return dayModels
     }
     static func createMockActivityModelData(sectionTitle: String) -> [ActivityModel] {
@@ -49,7 +49,7 @@ class MockData {
             models.append(ActivityModel(title: "Hotel Checkout", subTitle: "from Bintang Kuta Hotel", activityType: ActivityType.hotel))
             models.append(ActivityModel(title: "DPS", subTitle: "Denpasar", activityType: ActivityType.flight))
             models.append(ActivityModel(title: "LAX", subTitle: "Los Angeles", activityType: ActivityType.flight))
-            models.append(ActivityModel(title: "SLC", subTitle: "Salt Lake City", activityType: ActivityType.flight))
+            models.append(ActivityModel(title: "SLC", subTitle: "Salt Lake City, demo tech demo text Salt Lake City, demo tech demo text", activityType: ActivityType.flight))
         default:
             models.append(ActivityModel(title: "", subTitle: "", activityType: ActivityType.excursion))
         }
