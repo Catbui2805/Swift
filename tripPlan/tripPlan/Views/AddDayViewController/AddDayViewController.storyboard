@@ -19,39 +19,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05U-Kz-7a1" customClass="PopupUIView" customModule="tripPlan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="30" width="335" height="192"/>
+                                <rect key="frame" x="20" y="30" width="335" height="308"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuF-L0-fUh">
                                         <rect key="frame" x="20" y="8" width="295" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="AMl-PL-5Ji"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title or data" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjy-us-D8N">
-                                        <rect key="frame" x="20" y="54" width="295" height="38"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.79454730309999999" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="38" id="SeG-em-OdD"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description (optinal)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dd-QR-wka">
-                                        <rect key="frame" x="20" y="100" width="295" height="38"/>
+                                        <rect key="frame" x="20" y="212" width="295" height="38"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.79454730309999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="GfZ-T1-7PB"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="done:" destination="dKS-kc-cZV" eventType="editingDidEnd" id="nai-va-DsY"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ui-Qr-L7f" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="146" width="100" height="38"/>
+                                        <rect key="frame" x="20" y="258" width="100" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="iBg-a2-IBa"/>
                                             <constraint firstAttribute="height" constant="38" id="xAA-0m-h8u"/>
@@ -62,8 +55,17 @@
                                             <action selector="cancelTaped:" destination="dKS-kc-cZV" eventType="touchUpInside" id="Ei1-9s-FZF"/>
                                         </connections>
                                     </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="HG2-UF-kcm">
+                                        <rect key="frame" x="20" y="54" width="295" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="xOg-u5-5Qg"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="575753109.86194694">
+                                            <!--2019-03-31 19:25:09 +0000-->
+                                        </date>
+                                    </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr9-Mm-Ywl" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="215" y="146" width="100" height="38"/>
+                                        <rect key="frame" x="215" y="258" width="100" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="8ss-Vi-y80"/>
                                             <constraint firstAttribute="width" constant="100" id="mbb-4t-XLb"/>
@@ -78,20 +80,19 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="RuF-L0-fUh" firstAttribute="top" secondItem="05U-Kz-7a1" secondAttribute="top" constant="8" id="8XZ-wy-pNa"/>
-                                    <constraint firstItem="bjy-us-D8N" firstAttribute="top" secondItem="RuF-L0-fUh" secondAttribute="bottom" constant="8" id="B2Q-cH-dOV"/>
-                                    <constraint firstItem="8dd-QR-wka" firstAttribute="top" secondItem="bjy-us-D8N" secondAttribute="bottom" constant="8" id="DsM-V0-7za"/>
-                                    <constraint firstAttribute="trailing" secondItem="bjy-us-D8N" secondAttribute="trailing" constant="20" id="Eys-97-jUs"/>
+                                    <constraint firstItem="HG2-UF-kcm" firstAttribute="top" secondItem="RuF-L0-fUh" secondAttribute="bottom" constant="8" id="C2p-bK-mXG"/>
+                                    <constraint firstAttribute="trailing" secondItem="nr9-Mm-Ywl" secondAttribute="trailing" constant="20" id="Fgq-gP-LSX"/>
                                     <constraint firstAttribute="trailing" secondItem="8dd-QR-wka" secondAttribute="trailing" constant="20" id="GkJ-eA-4Of"/>
-                                    <constraint firstAttribute="trailing" secondItem="nr9-Mm-Ywl" secondAttribute="trailing" constant="20" id="ODp-86-Pr1"/>
-                                    <constraint firstAttribute="bottom" secondItem="6ui-Qr-L7f" secondAttribute="bottom" constant="8" id="Qr4-c0-Umf"/>
-                                    <constraint firstItem="nr9-Mm-Ywl" firstAttribute="top" secondItem="8dd-QR-wka" secondAttribute="bottom" constant="8" id="TiA-qh-6BJ"/>
+                                    <constraint firstItem="8dd-QR-wka" firstAttribute="top" secondItem="HG2-UF-kcm" secondAttribute="bottom" constant="8" id="HvB-O8-w9F"/>
+                                    <constraint firstItem="HG2-UF-kcm" firstAttribute="leading" secondItem="05U-Kz-7a1" secondAttribute="leading" constant="20" id="Pn4-0d-mhd"/>
+                                    <constraint firstItem="nr9-Mm-Ywl" firstAttribute="top" secondItem="8dd-QR-wka" secondAttribute="bottom" constant="8" id="Qzn-eU-A8A"/>
+                                    <constraint firstItem="6ui-Qr-L7f" firstAttribute="top" secondItem="8dd-QR-wka" secondAttribute="bottom" constant="8" id="Ssk-rt-75U"/>
+                                    <constraint firstItem="6ui-Qr-L7f" firstAttribute="leading" secondItem="05U-Kz-7a1" secondAttribute="leading" constant="20" id="YJI-7h-arK"/>
                                     <constraint firstItem="8dd-QR-wka" firstAttribute="leading" secondItem="05U-Kz-7a1" secondAttribute="leading" constant="20" id="aPi-2i-l3O"/>
                                     <constraint firstItem="RuF-L0-fUh" firstAttribute="leading" secondItem="05U-Kz-7a1" secondAttribute="leading" constant="20" id="djw-fy-geY"/>
+                                    <constraint firstAttribute="trailing" secondItem="HG2-UF-kcm" secondAttribute="trailing" constant="20" id="dvs-2c-C46"/>
+                                    <constraint firstAttribute="bottom" secondItem="6ui-Qr-L7f" secondAttribute="bottom" constant="12" id="gIB-d9-9cV"/>
                                     <constraint firstAttribute="trailing" secondItem="RuF-L0-fUh" secondAttribute="trailing" constant="20" id="qkm-Cq-H5m"/>
-                                    <constraint firstAttribute="trailing" secondItem="nr9-Mm-Ywl" secondAttribute="trailing" constant="20" id="rX5-RQ-Peu"/>
-                                    <constraint firstItem="6ui-Qr-L7f" firstAttribute="top" secondItem="8dd-QR-wka" secondAttribute="bottom" constant="8" id="rcy-Ad-aBu"/>
-                                    <constraint firstItem="6ui-Qr-L7f" firstAttribute="leading" secondItem="05U-Kz-7a1" secondAttribute="leading" constant="20" id="tLu-s0-IP1"/>
-                                    <constraint firstItem="bjy-us-D8N" firstAttribute="leading" secondItem="05U-Kz-7a1" secondAttribute="leading" constant="20" id="xUI-Qv-j2J"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -106,15 +107,15 @@
                     <connections>
                         <outlet property="cancelButton" destination="6ui-Qr-L7f" id="bPY-O0-KEQ"/>
                         <outlet property="cardView" destination="05U-Kz-7a1" id="yeR-8A-GVr"/>
+                        <outlet property="dateViewPicker" destination="HG2-UF-kcm" id="T7P-MW-2ss"/>
                         <outlet property="saveBt" destination="nr9-Mm-Ywl" id="is8-Gq-LL3"/>
                         <outlet property="subTitleTextField" destination="8dd-QR-wka" id="WOr-jj-cCu"/>
                         <outlet property="titleLabel" destination="RuF-L0-fUh" id="UL9-hl-Uob"/>
-                        <outlet property="titleTextField" destination="bjy-us-D8N" id="XoY-tO-i6z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KB1-qa-q2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="-17.541229385307346"/>
+            <point key="canvasLocation" x="218.40000000000001" y="-167.76611694152925"/>
         </scene>
     </scenes>
 </document>

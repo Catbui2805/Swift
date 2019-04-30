@@ -64,7 +64,7 @@ class ActivitiesViewController: UIViewController {
         alert.popoverPresentationController?.sourceRect = sender.bounds
         present(alert, animated: true)
     }
-
+    
     func handleAddDay(action: UIAlertAction) {
         let vc = AddDayViewController.getInstance() as! AddDayViewController
         vc.tripIndex = Data.tripModels.firstIndex(where: { (tripModel) -> Bool in
@@ -75,7 +75,7 @@ class ActivitiesViewController: UIViewController {
                 return
             }
             
-//            self.tripModel?.dayModels.append(dayModel) //
+            //            self.tripModel?.dayModels.append(dayModel) //
             let indexArray = [self.tripModel?.dayModels.count != nil ? (self.tripModel?.dayModels.count)! - 1 : 0]
             self.tableView.insertSections(IndexSet(indexArray), with: UITableView.RowAnimation.automatic)
         }

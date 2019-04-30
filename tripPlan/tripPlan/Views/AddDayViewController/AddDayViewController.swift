@@ -12,7 +12,7 @@ class AddDayViewController: UIViewController {
 
     @IBOutlet weak var cardView: PopupUIView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var dateViewPicker: UIDatePicker!
     @IBOutlet weak var subTitleTextField: UITextField!
     @IBOutlet weak var saveBt: UIButton!
     @IBOutlet weak var cancelButton: AppUIButton!
@@ -30,15 +30,16 @@ class AddDayViewController: UIViewController {
     }
     
     @IBAction func saveTapped(_ sender: Any) {
-        
-        guard titleTextField.hasValue, let newTitle = titleTextField.text else {
-            return
-        }
-        let dayModel = DayModel(title: newTitle, subtitle: subTitleTextField.text ?? "", data: nil)
+        let dayModel = DayModel(title: dateViewPicker.date, subtitle: subTitleTextField.text ?? "", data: nil)
         DayFunctions.createDay(at: tripIndex, dayModel: dayModel)
         if let doneSaving = doneSaving {
             doneSaving(dayModel)
         }
         dismiss(animated: true)
     }
+    
+    @IBAction func done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
 }
