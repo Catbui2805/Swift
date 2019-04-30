@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F508BEA22277EF8800650887 /* ActivitiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F508BEA12277EF8800650887 /* ActivitiesViewController.storyboard */; };
 		F508BEA42277EFAD00650887 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEA32277EFAD00650887 /* ActivitiesViewController.swift */; };
+		F508BEA72277FF1500650887 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEA62277FF1500650887 /* DayModel.swift */; };
+		F508BEAA2278000700650887 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEA92278000700650887 /* ActivityModel.swift */; };
+		F508BEAC2278005B00650887 /* ActivityTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEAB2278005B00650887 /* ActivityTypeEnum.swift */; };
+		F508BEAE227802CF00650887 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEAD227802CF00650887 /* MockData.swift */; };
 		F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13D22276D605008782F9 /* AppDelegate.swift */; };
 		F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13D92276D607008782F9 /* Assets.xcassets */; };
 		F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13DB2276D607008782F9 /* LaunchScreen.storyboard */; };
@@ -32,6 +36,10 @@
 /* Begin PBXFileReference section */
 		F508BEA12277EF8800650887 /* ActivitiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesViewController.storyboard; sourceTree = "<group>"; };
 		F508BEA32277EFAD00650887 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		F508BEA62277FF1500650887 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		F508BEA92278000700650887 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		F508BEAB2278005B00650887 /* ActivityTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypeEnum.swift; sourceTree = "<group>"; };
+		F508BEAD227802CF00650887 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		F5FB13CF2276D605008782F9 /* tripPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB13D22276D605008782F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB13D92276D607008782F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +82,23 @@
 			path = ActivitiesViewController;
 			sourceTree = "<group>";
 		};
+		F508BEA52277FEFF00650887 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				F508BEA62277FF1500650887 /* DayModel.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		F508BEA82277FFE300650887 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				F508BEA92278000700650887 /* ActivityModel.swift */,
+				F508BEAB2278005B00650887 /* ActivityTypeEnum.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		F5FB13C62276D605008782F9 = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				F5FB13EA2276DD8E008782F9 /* Data.swift */,
+				F508BEAD227802CF00650887 /* MockData.swift */,
 				F5FB13E52276DC12008782F9 /* Trip */,
+				F508BEA52277FEFF00650887 /* Day */,
+				F508BEA82277FFE300650887 /* Activity */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,13 +287,17 @@
 				F5FB13F92276F3B1008782F9 /* Theme.swift in Sources */,
 				F5FB13F62276F1F8008782F9 /* UIViewExtensions.swift in Sources */,
 				F508BEA42277EFAD00650887 /* ActivitiesViewController.swift in Sources */,
+				F508BEAC2278005B00650887 /* ActivityTypeEnum.swift in Sources */,
 				F5FB13E72276DC33008782F9 /* TripModel.swift in Sources */,
 				F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */,
+				F508BEA72277FF1500650887 /* DayModel.swift in Sources */,
 				F5FB140B22772B7B008782F9 /* PopupUIView.swift in Sources */,
 				F5FB140D22772E19008782F9 /* AppUIButton.swift in Sources */,
 				F5FB140F22773330008782F9 /* FloatingActionButton.swift in Sources */,
 				F5FB13FD22770F24008782F9 /* UIButtonExtention.swift in Sources */,
 				F5FB13E92276DC45008782F9 /* TripFunctions.swift in Sources */,
+				F508BEAE227802CF00650887 /* MockData.swift in Sources */,
+				F508BEAA2278000700650887 /* ActivityModel.swift in Sources */,
 				F5FB14062277166E008782F9 /* AddTripViewController.swift in Sources */,
 				F5FB13EB2276DD8E008782F9 /* Data.swift in Sources */,
 				F5FB13F12276E225008782F9 /* TripsViewController.swift in Sources */,

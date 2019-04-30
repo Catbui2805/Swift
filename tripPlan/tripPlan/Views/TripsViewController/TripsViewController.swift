@@ -25,7 +25,7 @@ class TripsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        TripFuctions.readTrip { [unowned self] in
+        TripFuctions.readTrips { [unowned self] in
             // completion
             self.tableView.reloadData()
             
@@ -113,9 +113,10 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let trip = Data.tripModels[indexPath.row]
         let storyboard = UIStoryboard(name: String(describing: ActivitiesViewController.self ), bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! ActivitiesViewController
-        
+        vc.tripId = trip.id
         navigationController?.pushViewController(vc, animated: true)
     }
 }
