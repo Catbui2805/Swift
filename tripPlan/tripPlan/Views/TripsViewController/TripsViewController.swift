@@ -25,6 +25,8 @@ class TripsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        title = "Trip Planning"
+        
         TripFuctions.readTrips { [unowned self] in
             // completion
             self.tableView.reloadData()
@@ -97,6 +99,7 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
             }))
             self.present(alert, animated: true)
         }
+        delete.backgroundColor = Theme.tintColor
         delete.image = UIImage(named: "clear2")
         
         return UISwipeActionsConfiguration(actions: [delete])
@@ -107,7 +110,7 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
             self.tripIndexToEdit = indexPath.row
             self.performSegue(withIdentifier: "toAddTripSegue", sender: nil)
         }
-        edit.backgroundColor = UIColor.blue
+        edit.backgroundColor = Theme.editButtonColor
         edit.image = UIImage(named: "edit")
         return UISwipeActionsConfiguration(actions: [edit])
     }
