@@ -41,7 +41,7 @@ class ActivitiesViewController: UIViewController {
         headerInSection = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell")?.contentView.bounds.height ?? 0
     }
     
-    @IBAction func addTapped(_ sender: Any) {
+    @IBAction func addTapped(_ sender: UIButton) {
         let alert = UIAlertController(title: "Which would you like to add?", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         let dayAction = UIAlertAction(title: "Day", style: UIAlertAction.Style.default) { (action) in
             print("Add day action")
@@ -57,6 +57,8 @@ class ActivitiesViewController: UIViewController {
         alert.addAction(activityAction)
         alert.addAction(cancelAction)
         alert.view.tintColor = Theme.tintColor
+        alert.popoverPresentationController?.sourceView = sender
+        alert.popoverPresentationController?.sourceRect = sender.bounds
         present(alert, animated: true)
     }
 
