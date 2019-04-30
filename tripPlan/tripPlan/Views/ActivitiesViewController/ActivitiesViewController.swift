@@ -19,14 +19,7 @@ class ActivitiesViewController: UIViewController {
     var tripModel: TripModel?
     var headerInSection: CGFloat = 0.0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = tripTitle
-        addButton.createFloatingActionButton()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
+    fileprivate func updateTableViewWithTripDate() {
         TripFuctions.readTrip(by: tripId) { [weak self] (model) in
             guard let self = self else {
                 return
@@ -38,6 +31,18 @@ class ActivitiesViewController: UIViewController {
             self.backgroundImage.image = model.image
             self.tableView.reloadData()
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = tripTitle
+        addButton.createFloatingActionButton()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        updateTableViewWithTripDate()
+        
         headerInSection = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell")?.contentView.bounds.height ?? 0
     }
     
@@ -61,7 +66,16 @@ class ActivitiesViewController: UIViewController {
     }
 
     func handleAddDay(action: UIAlertAction) {
-        let vc = AddDayViewController.getInstance()
+        let vc = AddDayViewController.getInstance() as! AddDayViewController
+        vc.tripIndex = Data.tripModels.firstIndex(where: { (tripModel) -> Bool in
+            tripModel.id == tripId
+        })
+        vc.doneSaving = { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.updateTableViewWithTripDate() 
+        }
         present(vc, animated: true)
     }
     

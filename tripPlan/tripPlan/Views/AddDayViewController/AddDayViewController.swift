@@ -18,7 +18,7 @@ class AddDayViewController: UIViewController {
     @IBOutlet weak var cancelButton: AppUIButton!
     
     var doneSaving: (() -> ())?
-    var tripIndexToEdit: Int?
+    var tripIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,8 @@ class AddDayViewController: UIViewController {
         guard titleTextField.hasValue, let newTitle = titleTextField.text else {
             return
         }
+        let dayModel = DayModel(title: newTitle, subtitle: subTitleTextField.text ?? "", data: nil)
+        DayFunctions.createDay(at: tripIndex, dayModel: dayModel)
         
         if let doneSaving = doneSaving {
             doneSaving()
