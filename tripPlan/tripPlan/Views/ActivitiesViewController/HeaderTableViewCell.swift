@@ -12,7 +12,7 @@ class HeaderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         

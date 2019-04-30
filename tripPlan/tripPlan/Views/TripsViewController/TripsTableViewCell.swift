@@ -14,7 +14,7 @@ class TripsTableViewCell: UITableViewCell {
     @IBOutlet weak var tripImageView: UIImageView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

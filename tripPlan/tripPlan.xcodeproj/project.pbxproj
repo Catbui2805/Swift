@@ -15,6 +15,7 @@
 		F508BEAE227802CF00650887 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEAD227802CF00650887 /* MockData.swift */; };
 		F508BEB022783D3700650887 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEAF22783D3700650887 /* HeaderTableViewCell.swift */; };
 		F508BEB222785F9800650887 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEB122785F9800650887 /* ActivityTableViewCell.swift */; };
+		F508BEB42278995300650887 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEB32278995300650887 /* UITableViewExtensions.swift */; };
 		F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13D22276D605008782F9 /* AppDelegate.swift */; };
 		F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13D92276D607008782F9 /* Assets.xcassets */; };
 		F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13DB2276D607008782F9 /* LaunchScreen.storyboard */; };
@@ -44,6 +45,7 @@
 		F508BEAD227802CF00650887 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		F508BEAF22783D3700650887 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		F508BEB122785F9800650887 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		F508BEB32278995300650887 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		F5FB13CF2276D605008782F9 /* tripPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB13D22276D605008782F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB13D92276D607008782F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				F5FB13F52276F1F8008782F9 /* UIViewExtensions.swift */,
 				F5FB13FC22770F24008782F9 /* UIButtonExtention.swift */,
 				F5FB140E22773330008782F9 /* FloatingActionButton.swift */,
+				F508BEB32278995300650887 /* UITableViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F508BEB42278995300650887 /* UITableViewExtensions.swift in Sources */,
 				F5FB13F32276EBED008782F9 /* TripsTableViewCell.swift in Sources */,
 				F5FB13F92276F3B1008782F9 /* Theme.swift in Sources */,
 				F508BEB222785F9800650887 /* ActivityTableViewCell.swift in Sources */,

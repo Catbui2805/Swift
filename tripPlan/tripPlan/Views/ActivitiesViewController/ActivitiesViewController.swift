@@ -35,7 +35,7 @@ class ActivitiesViewController: UIViewController {
             self.backgroundImage.image = model.image
             self.tableView.reloadData()
         }
-        headerInSection = tableView.dequeueReusableCell(withIdentifier: "headerCell")?.contentView.bounds.height ?? 0
+        headerInSection = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell")?.contentView.bounds.height ?? 0
     }
     
     @IBAction func backToTripsViewController(_ sender: Any) {
@@ -53,7 +53,7 @@ extension ActivitiesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! HeaderTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.identifier) as! HeaderTableViewCell
         if let dayModel = tripModel?.dayModels[section] {
             cell.setup(model: dayModel)
         }
@@ -64,12 +64,8 @@ extension ActivitiesViewController: UITableViewDelegate, UITableViewDataSource {
         return tripModel?.dayModels[section].activityModels.count ?? 0
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 72
-//    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ActivityTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ActivityTableViewCell.identifier) as! ActivityTableViewCell
         if let model = tripModel?.dayModels[indexPath.section].activityModels[indexPath.row] {
             cell.setup(model: model)
         }
