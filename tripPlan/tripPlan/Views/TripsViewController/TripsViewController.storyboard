@@ -30,10 +30,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvc-ZS-z39">
-                                                    <rect key="frame" x="20" y="10" width="374" height="139.66666666666666"/>
+                                                    <rect key="frame" x="20" y="10" width="374" height="140"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-BB-46E">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="139.66666666666666"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-tx-4A8">
                                                             <rect key="frame" x="0.0" y="39" width="374" height="60"/>
@@ -64,6 +64,7 @@
                                             <outlet property="cardView" destination="Kvc-ZS-z39" id="McL-oT-wVV"/>
                                             <outlet property="titleLabel" destination="2YF-tx-4A8" id="Hnv-hs-eCL"/>
                                             <outlet property="tripImageView" destination="8pq-BB-46E" id="AaG-IN-Ov1"/>
+                                            <segue destination="SnS-3x-2Xm" kind="show" id="jpJ-qF-wpt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -166,13 +167,21 @@
             </objects>
             <point key="canvasLocation" x="242.0289855072464" y="218.47826086956525"/>
         </scene>
+        <!--ActivitiesViewController-->
+        <scene sceneID="ffi-R2-6vv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActivitiesViewController" id="SnS-3x-2Xm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hE6-bf-vfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869" y="198"/>
+        </scene>
         <!--AddTripViewController-->
         <scene sceneID="L4r-EQ-tOE">
             <objects>
                 <viewControllerPlaceholder storyboardName="AddTripViewController" id="1JV-8n-eog" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yM-CT-9Xa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="218"/>
+            <point key="canvasLocation" x="872" y="237"/>
         </scene>
     </scenes>
     <resources>

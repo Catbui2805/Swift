@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F508BEA22277EF8800650887 /* ActivitiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F508BEA12277EF8800650887 /* ActivitiesViewController.storyboard */; };
+		F508BEA42277EFAD00650887 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEA32277EFAD00650887 /* ActivitiesViewController.swift */; };
 		F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13D22276D605008782F9 /* AppDelegate.swift */; };
 		F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13D92276D607008782F9 /* Assets.xcassets */; };
 		F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13DB2276D607008782F9 /* LaunchScreen.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F508BEA12277EF8800650887 /* ActivitiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesViewController.storyboard; sourceTree = "<group>"; };
+		F508BEA32277EFAD00650887 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		F5FB13CF2276D605008782F9 /* tripPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB13D22276D605008782F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB13D92276D607008782F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F508BEA02277EF3D00650887 /* ActivitiesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F508BEA12277EF8800650887 /* ActivitiesViewController.storyboard */,
+				F508BEA32277EFAD00650887 /* ActivitiesViewController.swift */,
+			);
+			path = ActivitiesViewController;
+			sourceTree = "<group>";
+		};
 		F5FB13C62276D605008782F9 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 			children = (
 				F5FB1402227715E8008782F9 /* AddTripViewController */,
 				F5FB13ED2276E1AA008782F9 /* TripsViewController */,
+				F508BEA02277EF3D00650887 /* ActivitiesViewController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +241,7 @@
 			files = (
 				F5FB140822771A8B008782F9 /* Colors.xcassets in Resources */,
 				F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */,
+				F508BEA22277EF8800650887 /* ActivitiesViewController.storyboard in Resources */,
 				F5FB13EF2276E208008782F9 /* TripsViewController.storyboard in Resources */,
 				F5FB1404227715E8008782F9 /* AddTripViewController.storyboard in Resources */,
 				F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */,
@@ -243,6 +258,7 @@
 				F5FB13F32276EBED008782F9 /* TripsTableViewCell.swift in Sources */,
 				F5FB13F92276F3B1008782F9 /* Theme.swift in Sources */,
 				F5FB13F62276F1F8008782F9 /* UIViewExtensions.swift in Sources */,
+				F508BEA42277EFAD00650887 /* ActivitiesViewController.swift in Sources */,
 				F5FB13E72276DC33008782F9 /* TripModel.swift in Sources */,
 				F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */,
 				F5FB140B22772B7B008782F9 /* PopupUIView.swift in Sources */,

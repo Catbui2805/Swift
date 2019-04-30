@@ -62,6 +62,9 @@ class TripsViewController: UIViewController {
         }
     }
     
+    @IBAction func unwindToTripsViewController(_ unwindSegue: UIStoryboardSegue) {
+        // Leave this blank
+    }
     
 }
 
