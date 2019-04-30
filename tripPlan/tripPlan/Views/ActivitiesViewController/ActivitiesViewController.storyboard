@@ -41,7 +41,7 @@
                                             <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="backToTripsViewController:" destination="HYv-YP-2vX" eventType="touchUpInside" id="cFP-bq-SOu"/>
+                                            <action selector="backToTripsViewController:" destination="HYv-YP-2vX" eventType="touchUpInside" id="HTC-he-MY9"/>
                                         </connections>
                                     </button>
                                 </subviews>

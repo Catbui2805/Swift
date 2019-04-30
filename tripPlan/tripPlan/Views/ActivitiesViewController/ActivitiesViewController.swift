@@ -14,10 +14,10 @@ class ActivitiesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
-    
-    @IBAction func backToTripsViewController(_ sender: UIButton) {
-        dismiss(animated: true)
+    @IBAction func backToTripsViewController(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
 }
