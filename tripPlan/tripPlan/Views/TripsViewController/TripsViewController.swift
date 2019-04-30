@@ -11,7 +11,7 @@ import UIKit
 class TripsViewController: UIViewController {
     
     
-    @IBOutlet weak var addButton: FloatingActionButton!
+    @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet var helpView: UIVisualEffectView!
@@ -114,8 +114,7 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let trip = Data.tripModels[indexPath.row]
-        let storyboard = UIStoryboard(name: String(describing: ActivitiesViewController.self ), bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as! ActivitiesViewController
+        let vc = ActivitiesViewController.getInstance() as! ActivitiesViewController
         vc.tripId = trip.id
         vc.tripTitle = trip.title
         navigationController?.pushViewController(vc, animated: true)

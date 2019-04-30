@@ -43,9 +43,7 @@ class ActivitiesViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: UIButton) {
         let alert = UIAlertController(title: "Which would you like to add?", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
-        let dayAction = UIAlertAction(title: "Day", style: UIAlertAction.Style.default) { (action) in
-            print("Add day action")
-        }
+        let dayAction = UIAlertAction(title: "Day", style: UIAlertAction.Style.default, handler: handleAddDay)
         let activityAction = UIAlertAction(title: "Activity", style: UIAlertAction.Style.default, handler: { (action) in
             print("Add activity action")
         })
@@ -62,6 +60,11 @@ class ActivitiesViewController: UIViewController {
         present(alert, animated: true)
     }
 
+    func handleAddDay(action: UIAlertAction) {
+        let vc = AddDayViewController.getInstance()
+        present(vc, animated: true)
+    }
+    
     @IBAction func backToTripsViewController(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
