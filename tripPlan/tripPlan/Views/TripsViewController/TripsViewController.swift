@@ -61,11 +61,6 @@ class TripsViewController: UIViewController {
             UserDefaults.standard.set(true, forKey: self.seenHelpView)
         }
     }
-    
-    @IBAction func unwindToTripsViewController(_ unwindSegue: UIStoryboardSegue) {
-        // Leave this blank
-    }
-    
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
@@ -115,5 +110,12 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
         edit.backgroundColor = UIColor.blue
         edit.image = UIImage(named: "edit")
         return UISwipeActionsConfiguration(actions: [edit])
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: String(describing: ActivitiesViewController.self ), bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! ActivitiesViewController
+        
+        present(vc, animated: true)
     }
 }

@@ -15,4 +15,9 @@ class ActivitiesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func backToTripsViewController(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }

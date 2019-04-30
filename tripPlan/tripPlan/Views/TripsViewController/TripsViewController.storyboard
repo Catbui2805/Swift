@@ -64,7 +64,6 @@
                                             <outlet property="cardView" destination="Kvc-ZS-z39" id="McL-oT-wVV"/>
                                             <outlet property="titleLabel" destination="2YF-tx-4A8" id="Hnv-hs-eCL"/>
                                             <outlet property="tripImageView" destination="8pq-BB-46E" id="AaG-IN-Ov1"/>
-                                            <segue destination="SnS-3x-2Xm" kind="show" id="jpJ-qF-wpt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -170,7 +169,7 @@
         <!--ActivitiesViewController-->
         <scene sceneID="ffi-R2-6vv">
             <objects>
-                <viewControllerPlaceholder storyboardName="ActivitiesViewController" id="SnS-3x-2Xm" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="ActivitiesViewController" storyboardName="ActivitiesViewController" id="SnS-3x-2Xm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hE6-bf-vfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="869" y="198"/>
