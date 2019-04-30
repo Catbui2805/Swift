@@ -25,8 +25,8 @@ class TripsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        title = "Trip Planning"
-        
+        title = "Trips"
+        self.navigationController?.navigationBar.barTintColor = Theme.accentColor
         TripFuctions.readTrips { [unowned self] in
             // completion
             self.tableView.reloadData()
@@ -40,7 +40,7 @@ class TripsViewController: UIViewController {
             
         }
         
-
+        
     }
     
     // Reload tableView when add trip
@@ -120,6 +120,7 @@ extension TripsViewController: UITableViewDelegate, UITableViewDataSource {
         let storyboard = UIStoryboard(name: String(describing: ActivitiesViewController.self ), bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! ActivitiesViewController
         vc.tripId = trip.id
+        vc.tripTitle = trip.title
         navigationController?.pushViewController(vc, animated: true)
     }
 }

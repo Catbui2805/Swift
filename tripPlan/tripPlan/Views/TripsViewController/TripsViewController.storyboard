@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Trips View Controller-->
+        <!--Trips-->
         <scene sceneID="dzB-ID-myC">
             <objects>
                 <viewController id="fjg-e8-mm5" customClass="TripsViewController" customModule="tripPlan" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uei-W2-alK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HyO-bA-Xf5"/>
+                    <navigationItem key="navigationItem" title="Trips" id="HyO-bA-Xf5"/>
                     <connections>
                         <outlet property="addButton" destination="bR0-Sa-bYM" id="Mne-cN-g42"/>
                         <outlet property="helpView" destination="dt6-sR-T1Q" id="KWu-Ga-Tfd"/>
@@ -180,9 +180,17 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nps-4K-88u" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JXk-Ky-DSt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="JXk-Ky-DSt">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.083555214107036591" green="0.19787225127220154" blue="0.31374064087867737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
