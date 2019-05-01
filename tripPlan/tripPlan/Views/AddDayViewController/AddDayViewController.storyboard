@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05U-Kz-7a1" customClass="PopupUIView" customModule="tripPlan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="30" width="335" height="308"/>
+                                <rect key="frame" x="16" y="30" width="343" height="308"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuF-L0-fUh">
-                                        <rect key="frame" x="20" y="8" width="295" height="38"/>
+                                        <rect key="frame" x="20" y="8" width="303" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="AMl-PL-5Ji"/>
                                         </constraints>
@@ -31,7 +31,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description (optinal)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dd-QR-wka">
-                                        <rect key="frame" x="20" y="212" width="295" height="38"/>
+                                        <rect key="frame" x="20" y="212" width="303" height="38"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.79454730309999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="GfZ-T1-7PB"/>
@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="HG2-UF-kcm">
-                                        <rect key="frame" x="20" y="54" width="295" height="150"/>
+                                        <rect key="frame" x="20" y="54" width="303" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="xOg-u5-5Qg"/>
                                         </constraints>
@@ -65,7 +65,7 @@
                                         </date>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr9-Mm-Ywl" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="215" y="258" width="100" height="38"/>
+                                        <rect key="frame" x="223" y="258" width="100" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="8ss-Vi-y80"/>
                                             <constraint firstAttribute="width" constant="100" id="mbb-4t-XLb"/>
@@ -99,8 +99,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="05U-Kz-7a1" firstAttribute="top" secondItem="AYn-m0-HUg" secondAttribute="top" constant="10" id="BPY-hm-INK"/>
-                            <constraint firstItem="05U-Kz-7a1" firstAttribute="leading" secondItem="OlC-Sb-jMn" secondAttribute="leading" constant="20" id="I50-SM-DbF"/>
-                            <constraint firstAttribute="trailing" secondItem="05U-Kz-7a1" secondAttribute="trailing" constant="20" id="ejP-7Z-pJc"/>
+                            <constraint firstItem="05U-Kz-7a1" firstAttribute="leading" secondItem="OlC-Sb-jMn" secondAttribute="leading" constant="16" id="I50-SM-DbF"/>
+                            <constraint firstAttribute="trailing" secondItem="05U-Kz-7a1" secondAttribute="trailing" constant="16" id="ejP-7Z-pJc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AYn-m0-HUg"/>
                     </view>

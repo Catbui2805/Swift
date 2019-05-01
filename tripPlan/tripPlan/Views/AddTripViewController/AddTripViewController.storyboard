@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRi-jF-mge" customClass="PopupUIView" customModule="tripPlan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="54" width="374" height="146"/>
+                                <rect key="frame" x="16" y="54" width="382" height="146"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XFl-po-QR0">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="146"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="146"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-aL-dew">
-                                        <rect key="frame" x="20" y="8" width="280" height="38"/>
+                                        <rect key="frame" x="20" y="8" width="288" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="Yyv-K6-fa5"/>
                                         </constraints>
@@ -34,7 +34,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nj-CI-Fsw">
-                                        <rect key="frame" x="20" y="54" width="334" height="38"/>
+                                        <rect key="frame" x="20" y="54" width="342" height="38"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.79454730308219179" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="iGw-SK-WVb"/>
@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-2g-oX3" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="254" y="100" width="100" height="38"/>
+                                        <rect key="frame" x="262" y="100" width="100" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="5av-mn-DPs"/>
                                             <constraint firstAttribute="height" constant="38" id="SmM-OA-YKl"/>
@@ -68,7 +68,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-wI-iSY">
-                                        <rect key="frame" x="308" y="4" width="46" height="46"/>
+                                        <rect key="frame" x="316" y="4" width="46" height="46"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="d7m-NC-1Fe"/>
@@ -105,8 +105,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1579991184" green="0.35498315759999999" blue="0.56692449970000003" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="GRi-jF-mge" firstAttribute="leading" secondItem="MpS-9p-VXI" secondAttribute="leading" constant="20" id="5eN-F8-DDp"/>
-                            <constraint firstItem="MpS-9p-VXI" firstAttribute="trailing" secondItem="GRi-jF-mge" secondAttribute="trailing" constant="20" id="OXw-7k-uhb"/>
+                            <constraint firstItem="GRi-jF-mge" firstAttribute="leading" secondItem="MpS-9p-VXI" secondAttribute="leading" constant="16" id="5eN-F8-DDp"/>
+                            <constraint firstItem="MpS-9p-VXI" firstAttribute="trailing" secondItem="GRi-jF-mge" secondAttribute="trailing" constant="16" id="OXw-7k-uhb"/>
                             <constraint firstItem="GRi-jF-mge" firstAttribute="top" secondItem="MpS-9p-VXI" secondAttribute="top" constant="10" id="oLu-wa-9dL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MpS-9p-VXI"/>

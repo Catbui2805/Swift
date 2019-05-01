@@ -30,13 +30,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvc-ZS-z39">
-                                                    <rect key="frame" x="20" y="10" width="374" height="140"/>
+                                                    <rect key="frame" x="16" y="10" width="382" height="140"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-BB-46E">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="140"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-tx-4A8">
-                                                            <rect key="frame" x="0.0" y="39" width="374" height="60"/>
+                                                            <rect key="frame" x="0.0" y="39" width="382" height="60"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,10 +53,10 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Kvc-ZS-z39" secondAttribute="bottom" constant="10" id="0Bf-aK-gaM"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kvc-ZS-z39" secondAttribute="bottom" priority="999" constant="10" id="0Bf-aK-gaM"/>
                                                 <constraint firstItem="Kvc-ZS-z39" firstAttribute="top" secondItem="8cA-6L-NIY" secondAttribute="top" constant="10" id="7A4-qg-wCn"/>
-                                                <constraint firstItem="Kvc-ZS-z39" firstAttribute="leading" secondItem="8cA-6L-NIY" secondAttribute="leading" constant="20" id="sUC-Wf-h0V"/>
-                                                <constraint firstAttribute="trailing" secondItem="Kvc-ZS-z39" secondAttribute="trailing" constant="20" id="vio-3B-jKW"/>
+                                                <constraint firstItem="Kvc-ZS-z39" firstAttribute="leading" secondItem="8cA-6L-NIY" secondAttribute="leading" constant="16" id="sUC-Wf-h0V"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kvc-ZS-z39" secondAttribute="trailing" constant="16" id="vio-3B-jKW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -200,7 +200,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="36" height="36"/>
+        <image name="add" width="48" height="48"/>
         <image name="swipeDelete" width="588" height="246"/>
         <image name="swipeEdit" width="588" height="252"/>
     </resources>

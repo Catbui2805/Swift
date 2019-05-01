@@ -24,3 +24,9 @@ struct ActivityModel {
     }
 }
 
+extension ActivityModel: Equatable {
+    static func == (lhs: ActivityModel, rhs: ActivityModel) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
