@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddActivityViewController: UIViewController {
+class AddActivityViewController: UITableViewController {
 
     @IBOutlet weak var cardView: PopupUIView!
     @IBOutlet weak var titleLabel: UILabel!
