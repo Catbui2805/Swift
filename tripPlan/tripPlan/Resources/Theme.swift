@@ -25,4 +25,7 @@ class Theme {
     // Popup
     static let popupFontTitleLable = UIFont(name: Theme.bodyFontNameDemiBold, size: 22)
     static let popupFontTitleButton = UIFont(name: "systemFont", size: 20)
+    
+    // Table
+    static let tableEditColor = UIColor(red:0.20, green:0.63, blue:0.76, alpha:1.0)
 }
