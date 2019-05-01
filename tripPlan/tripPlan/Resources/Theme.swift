@@ -21,4 +21,8 @@ class Theme {
     static let bodyFontNameDemiBold = "AvenirNext-DemiBold"
     static let bodyFontName = "AvenirNext-Regular"
     
+    
+    // Popup
+    static let popupFontTitleLable = UIFont(name: Theme.bodyFontNameDemiBold, size: 22)
+    static let popupFontTitleButton = UIFont(name: "systemFont", size: 20)
 }

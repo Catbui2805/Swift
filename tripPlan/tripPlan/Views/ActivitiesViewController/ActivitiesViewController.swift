@@ -50,11 +50,17 @@ class ActivitiesViewController: UIViewController {
         let alert = UIAlertController(title: "Which would you like to add?", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         let dayAction = UIAlertAction(title: "Day", style: UIAlertAction.Style.default, handler: handleAddDay)
         let activityAction = UIAlertAction(title: "Activity", style: UIAlertAction.Style.default, handler: { (action) in
-            print("Add activity action")
+            self.handleAddActivity(action: action)
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: { (action) in
             print("Cancel")
         })
+        
+//        if tripModel?.dayModels.count == 0 {
+//            activityAction.isEnabled = false
+//        }
+
+        activityAction.isEnabled = tripModel!.dayModels.count > 0
         
         alert.addAction(dayAction)
         alert.addAction(activityAction)
@@ -63,6 +69,12 @@ class ActivitiesViewController: UIViewController {
         alert.popoverPresentationController?.sourceView = sender
         alert.popoverPresentationController?.sourceRect = sender.bounds
         present(alert, animated: true)
+    }
+    
+    func handleAddActivity(action: UIAlertAction) {
+        let vc = AddActivityViewController.getInstance() as! AddActivityViewController
+        vc.tripModel = tripModel
+        present(vc, animated: true)
     }
     
     func handleAddDay(action: UIAlertAction) {
@@ -78,7 +90,6 @@ class ActivitiesViewController: UIViewController {
             self.tripModel?.dayModels.append(dayModel)
             let indexArray = [self.tripModel?.dayModels.firstIndex(of: dayModel) ?? 0]
             self.tableView.insertSections(IndexSet(indexArray), with: UITableView.RowAnimation.automatic)
-//            self.tableView.reloadData()
         }
         present(vc, animated: true)
     }
@@ -88,6 +99,8 @@ class ActivitiesViewController: UIViewController {
     }
     
 }
+
+// MARK: - UITableViewDelegate, UITableViewDataSource
 extension ActivitiesViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return tripModel?.dayModels.count ?? 0

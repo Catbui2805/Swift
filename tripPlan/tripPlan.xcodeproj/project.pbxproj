@@ -22,6 +22,8 @@
 		F508BEBD2278BF6C00650887 /* UITextFielExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEBC2278BF6C00650887 /* UITextFielExtension.swift */; };
 		F508BEBF2278C2E900650887 /* DayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEBE2278C2E900650887 /* DayFunctions.swift */; };
 		F508BEC12278D50100650887 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEC02278D50100650887 /* DateExtension.swift */; };
+		F5F8B15D227976EA00480F6A /* AddActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F8B15C227976EA00480F6A /* AddActivityViewController.storyboard */; };
+		F5F8B15F2279770600480F6A /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B15E2279770600480F6A /* AddActivityViewController.swift */; };
 		F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13D22276D605008782F9 /* AppDelegate.swift */; };
 		F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13D92276D607008782F9 /* Assets.xcassets */; };
 		F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13DB2276D607008782F9 /* LaunchScreen.storyboard */; };
@@ -57,6 +59,8 @@
 		F508BEBC2278BF6C00650887 /* UITextFielExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFielExtension.swift; sourceTree = "<group>"; };
 		F508BEBE2278C2E900650887 /* DayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFunctions.swift; sourceTree = "<group>"; };
 		F508BEC02278D50100650887 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		F5F8B15C227976EA00480F6A /* AddActivityViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddActivityViewController.storyboard; sourceTree = "<group>"; };
+		F5F8B15E2279770600480F6A /* AddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		F5FB13CF2276D605008782F9 /* tripPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB13D22276D605008782F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB13D92276D607008782F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +131,15 @@
 			path = AddDayViewController;
 			sourceTree = "<group>";
 		};
+		F5F8B15B2279769900480F6A /* AddActivityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8B15C227976EA00480F6A /* AddActivityViewController.storyboard */,
+				F5F8B15E2279770600480F6A /* AddActivityViewController.swift */,
+			);
+			path = AddActivityViewController;
+			sourceTree = "<group>";
+		};
 		F5FB13C62276D605008782F9 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +198,7 @@
 				F5FB1402227715E8008782F9 /* AddTripViewController */,
 				F508BEA02277EF3D00650887 /* ActivitiesViewController */,
 				F508BEB52278B3AF00650887 /* AddDayViewController */,
+				F5F8B15B2279769900480F6A /* AddActivityViewController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8B15D227976EA00480F6A /* AddActivityViewController.storyboard in Resources */,
 				F508BEB92278B40600650887 /* AddDayViewController.storyboard in Resources */,
 				F5FB140822771A8B008782F9 /* Colors.xcassets in Resources */,
 				F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */,
@@ -339,6 +354,7 @@
 				F5FB14062277166E008782F9 /* AddTripViewController.swift in Sources */,
 				F508BEBF2278C2E900650887 /* DayFunctions.swift in Sources */,
 				F5FB13EB2276DD8E008782F9 /* Data.swift in Sources */,
+				F5F8B15F2279770600480F6A /* AddActivityViewController.swift in Sources */,
 				F508BEBB2278BC8900650887 /* UIViewControllerExtension.swift in Sources */,
 				F5FB13F12276E225008782F9 /* TripsViewController.swift in Sources */,
 			);
