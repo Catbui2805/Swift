@@ -12,4 +12,11 @@ extension Date {
     func addDay(day: Int) -> Date {
         return Calendar.current.date(byAdding: .day, value: day, to: Date())!
     }
+    
+    func mediumDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter.string(from: self)
+    }
+    
 }
