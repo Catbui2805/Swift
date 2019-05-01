@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I51-fH-HUY" customClass="PopupUIView" customModule="tripPlan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="30" width="374" height="323"/>
+                                <rect key="frame" x="20" y="30" width="374" height="379"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YK6-l0-Y2m">
                                         <rect key="frame" x="20" y="12" width="334" height="30"/>
@@ -30,8 +31,66 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcB-l0-fMQ">
+                                        <rect key="frame" x="20" y="50" width="334" height="142"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="142" id="BcC-wo-oLg"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Sa-2Z-pcm">
+                                        <rect key="frame" x="20" y="200" width="334" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPG-p0-etc">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                <state key="normal" image="Car"/>
+                                                <connections>
+                                                    <action selector="activityTypeSelected:" destination="I3t-jo-Zpe" eventType="touchUpInside" id="cdu-mp-tXT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pin-pF-HHh">
+                                                <rect key="frame" x="71.666666666666671" y="0.0" width="48" height="48"/>
+                                                <state key="normal" image="Excursion"/>
+                                                <connections>
+                                                    <action selector="activityTypeSelected:" destination="I3t-jo-Zpe" eventType="touchUpInside" id="mNL-Jc-yx1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ld-sI-dT3">
+                                                <rect key="frame" x="143" y="0.0" width="48" height="48"/>
+                                                <state key="normal" image="Flight"/>
+                                                <connections>
+                                                    <action selector="activityTypeSelected:" destination="I3t-jo-Zpe" eventType="touchUpInside" id="OL2-CH-cOZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48p-vw-6du">
+                                                <rect key="frame" x="214.66666666666666" y="0.0" width="47.999999999999972" height="48"/>
+                                                <state key="normal" image="Food"/>
+                                                <connections>
+                                                    <action selector="activityTypeSelected:" destination="I3t-jo-Zpe" eventType="touchUpInside" id="Y8d-qs-5xf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sit-lz-yZo">
+                                                <rect key="frame" x="286" y="0.0" width="48" height="48"/>
+                                                <state key="normal" image="Hotel"/>
+                                                <connections>
+                                                    <action selector="activityTypeSelected:" destination="I3t-jo-Zpe" eventType="touchUpInside" id="fIV-dK-9rV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1ld-sI-dT3" secondAttribute="bottom" id="9Yz-1D-4yS"/>
+                                            <constraint firstItem="1ld-sI-dT3" firstAttribute="top" secondItem="8Sa-2Z-pcm" secondAttribute="top" id="9eI-f2-TkG"/>
+                                            <constraint firstAttribute="bottom" secondItem="pin-pF-HHh" secondAttribute="bottom" id="DXD-s1-rCL"/>
+                                            <constraint firstItem="48p-vw-6du" firstAttribute="top" secondItem="8Sa-2Z-pcm" secondAttribute="top" id="Dja-td-WuR"/>
+                                            <constraint firstAttribute="bottom" secondItem="48p-vw-6du" secondAttribute="bottom" id="OB6-OG-OJa"/>
+                                            <constraint firstItem="Sit-lz-yZo" firstAttribute="top" secondItem="8Sa-2Z-pcm" secondAttribute="top" id="WIO-Qa-ejC"/>
+                                            <constraint firstItem="pin-pF-HHh" firstAttribute="top" secondItem="8Sa-2Z-pcm" secondAttribute="top" id="ca3-rr-mkx"/>
+                                            <constraint firstAttribute="bottom" secondItem="LPG-p0-etc" secondAttribute="bottom" id="jnG-7H-RgL"/>
+                                            <constraint firstItem="LPG-p0-etc" firstAttribute="top" secondItem="8Sa-2Z-pcm" secondAttribute="top" id="sRG-0i-Uz0"/>
+                                            <constraint firstAttribute="bottom" secondItem="Sit-lz-yZo" secondAttribute="bottom" id="vM0-fm-bjG"/>
+                                        </constraints>
+                                    </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description (optinal)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qqv-V7-AUm">
-                                        <rect key="frame" x="20" y="238" width="334" height="30"/>
+                                        <rect key="frame" x="20" y="294" width="334" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.79454730309999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="6SN-jV-yHB"/>
@@ -41,7 +100,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are you doing?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jt6-J0-9cK">
-                                        <rect key="frame" x="20" y="200" width="334" height="30"/>
+                                        <rect key="frame" x="20" y="256" width="334" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.79454730309999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="p4V-5Y-NBL"/>
@@ -54,7 +113,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eft-DQ-KWQ" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="276" width="100" height="35"/>
+                                        <rect key="frame" x="20" y="332" width="100" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="6xa-Jf-I4V"/>
                                             <constraint firstAttribute="width" constant="100" id="TJW-Dc-xm8"/>
@@ -66,7 +125,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grz-a8-csu" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="254" y="276" width="100" height="35"/>
+                                        <rect key="frame" x="254" y="332" width="100" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="QU7-FA-Hgz"/>
                                             <constraint firstAttribute="width" constant="100" id="aaP-TN-DWj"/>
@@ -77,12 +136,6 @@
                                             <action selector="saveTapped:" destination="I3t-jo-Zpe" eventType="touchUpInside" id="see-v3-OQp"/>
                                         </connections>
                                     </button>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcB-l0-fMQ">
-                                        <rect key="frame" x="20" y="50" width="334" height="142"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="142" id="BcC-wo-oLg"/>
-                                        </constraints>
-                                    </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -90,17 +143,20 @@
                                     <constraint firstItem="qqv-V7-AUm" firstAttribute="top" secondItem="jt6-J0-9cK" secondAttribute="bottom" constant="8" id="7Af-ei-2RC"/>
                                     <constraint firstItem="eft-DQ-KWQ" firstAttribute="top" secondItem="qqv-V7-AUm" secondAttribute="bottom" constant="8" id="8jc-PJ-Nrv"/>
                                     <constraint firstAttribute="trailing" secondItem="Grz-a8-csu" secondAttribute="trailing" constant="20" id="DSX-NW-zvT"/>
-                                    <constraint firstItem="jt6-J0-9cK" firstAttribute="top" secondItem="mcB-l0-fMQ" secondAttribute="bottom" constant="8" id="R54-po-aHm"/>
+                                    <constraint firstItem="8Sa-2Z-pcm" firstAttribute="top" secondItem="mcB-l0-fMQ" secondAttribute="bottom" constant="8" id="EKB-XL-Tc4"/>
                                     <constraint firstItem="aFv-99-XeE" firstAttribute="trailing" secondItem="mcB-l0-fMQ" secondAttribute="trailing" constant="20" id="Ref-7N-mV1"/>
                                     <constraint firstItem="eft-DQ-KWQ" firstAttribute="leading" secondItem="I51-fH-HUY" secondAttribute="leading" constant="20" id="V0f-Cg-CjY"/>
                                     <constraint firstItem="mcB-l0-fMQ" firstAttribute="leading" secondItem="aFv-99-XeE" secondAttribute="leading" constant="20" id="V6T-Tc-gu9"/>
                                     <constraint firstItem="YK6-l0-Y2m" firstAttribute="top" secondItem="I51-fH-HUY" secondAttribute="top" constant="12" id="XRi-Kh-rou"/>
+                                    <constraint firstItem="8Sa-2Z-pcm" firstAttribute="leading" secondItem="aFv-99-XeE" secondAttribute="leading" constant="20" id="ZbQ-HF-3ch"/>
                                     <constraint firstAttribute="trailing" secondItem="YK6-l0-Y2m" secondAttribute="trailing" constant="20" id="dm5-Og-Bbh"/>
                                     <constraint firstAttribute="trailing" secondItem="qqv-V7-AUm" secondAttribute="trailing" constant="20" id="gBC-3X-YTC"/>
                                     <constraint firstItem="mcB-l0-fMQ" firstAttribute="top" secondItem="YK6-l0-Y2m" secondAttribute="bottom" constant="8" id="hHa-Jv-2iP"/>
                                     <constraint firstItem="YK6-l0-Y2m" firstAttribute="leading" secondItem="I51-fH-HUY" secondAttribute="leading" constant="20" id="i2f-jB-jst"/>
+                                    <constraint firstItem="jt6-J0-9cK" firstAttribute="top" secondItem="8Sa-2Z-pcm" secondAttribute="bottom" constant="8" id="iBx-qq-M0M"/>
                                     <constraint firstItem="qqv-V7-AUm" firstAttribute="leading" secondItem="I51-fH-HUY" secondAttribute="leading" constant="20" id="ius-0D-a9T"/>
                                     <constraint firstItem="jt6-J0-9cK" firstAttribute="leading" secondItem="I51-fH-HUY" secondAttribute="leading" constant="20" id="mXX-cG-pmL"/>
+                                    <constraint firstItem="aFv-99-XeE" firstAttribute="trailing" secondItem="8Sa-2Z-pcm" secondAttribute="trailing" constant="20" id="ma5-nj-73e"/>
                                     <constraint firstAttribute="bottom" secondItem="eft-DQ-KWQ" secondAttribute="bottom" constant="12" id="v0b-pa-Pp8"/>
                                     <constraint firstAttribute="trailing" secondItem="jt6-J0-9cK" secondAttribute="trailing" constant="20" id="z9m-Xz-wUh"/>
                                 </constraints>
@@ -123,11 +179,23 @@
                         <outlet property="subTitleTextField" destination="jt6-J0-9cK" id="90S-iG-bZA"/>
                         <outlet property="titleLabel" destination="YK6-l0-Y2m" id="PKS-uA-63y"/>
                         <outlet property="titleTextField" destination="qqv-V7-AUm" id="NBg-nd-5NP"/>
+                        <outletCollection property="activityTypeButtons" destination="LPG-p0-etc" collectionClass="NSMutableArray" id="QOS-2Y-gbD"/>
+                        <outletCollection property="activityTypeButtons" destination="pin-pF-HHh" collectionClass="NSMutableArray" id="CvM-0g-zau"/>
+                        <outletCollection property="activityTypeButtons" destination="1ld-sI-dT3" collectionClass="NSMutableArray" id="nis-6R-btQ"/>
+                        <outletCollection property="activityTypeButtons" destination="48p-vw-6du" collectionClass="NSMutableArray" id="L36-wS-ZAD"/>
+                        <outletCollection property="activityTypeButtons" destination="Sit-lz-yZo" collectionClass="NSMutableArray" id="8ws-EN-JZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Tv-la-fyi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20.289855072463769" y="78.260869565217391"/>
+            <point key="canvasLocation" x="-214.49275362318843" y="-66.032608695652172"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Car" width="48" height="48"/>
+        <image name="Excursion" width="48" height="48"/>
+        <image name="Flight" width="48" height="48"/>
+        <image name="Food" width="48" height="48"/>
+        <image name="Hotel" width="48" height="48"/>
+    </resources>
 </document>

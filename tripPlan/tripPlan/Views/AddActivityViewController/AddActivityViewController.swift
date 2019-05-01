@@ -27,20 +27,42 @@ class AddActivityViewController: UIViewController {
         dayViewPicker.dataSource = self
         dayViewPicker.delegate = self
         titleLabel.font = Theme.popupFontTitleLable
+        activityTypeButtons.forEach({ $0.tintColor = .darkGray})
+
     }
+   
+    
+    @IBOutlet var activityTypeButtons: [UIButton]!
+    
+    @IBAction func activityTypeSelected(_ sender: UIButton) {
+        activityTypeButtons.forEach({ $0.tintColor = .darkGray})
+        sender.tintColor = Theme.tintColor
+    }
+    
     
     @IBAction func cancelTaped(_ sender: Any) {
         dismiss(animated: true)
     }
     
     @IBAction func saveTapped(_ sender: Any) {
-       
+        let activityType: ActivityType = getSelectedActivityType()
+        
         dismiss(animated: true)
     }
     
     @IBAction func done(_ sender: UITextField) {
         sender.resignFirstResponder()
     }
+    
+    func getSelectedActivityType() -> ActivityType {
+        for (index, button) in activityTypeButtons.enumerated() {
+            if button.tintColor == Theme.tintColor {
+                return ActivityType(rawValue: index) ?? ActivityType.excursion
+            }
+        }
+        return .excursion
+    }
+    
 }
 
 // MARK: - UIPickerViewDataSource, UIPickerViewDelegate

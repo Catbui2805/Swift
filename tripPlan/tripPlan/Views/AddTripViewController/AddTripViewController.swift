@@ -107,7 +107,7 @@ class AddTripViewController: UIViewController {
     }
 }
 
-
+// MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension AddTripViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
