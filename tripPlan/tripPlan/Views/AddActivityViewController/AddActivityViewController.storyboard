@@ -108,9 +108,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
-                                        <connections>
-                                            <action selector="done:" destination="I3t-jo-Zpe" eventType="editingDidEnd" id="Acp-UN-vF2"/>
-                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eft-DQ-KWQ" customClass="AppUIButton" customModule="tripPlan" customModuleProvider="target">
                                         <rect key="frame" x="20" y="332" width="100" height="35"/>
@@ -176,9 +173,9 @@
                         <outlet property="cardView" destination="I51-fH-HUY" id="MSl-Md-TfJ"/>
                         <outlet property="dayViewPicker" destination="mcB-l0-fMQ" id="IFt-K8-fdY"/>
                         <outlet property="saveButton" destination="Grz-a8-csu" id="pOq-WK-jN8"/>
-                        <outlet property="subTitleTextField" destination="jt6-J0-9cK" id="90S-iG-bZA"/>
+                        <outlet property="subTitleTextField" destination="qqv-V7-AUm" id="CfL-X8-uKg"/>
                         <outlet property="titleLabel" destination="YK6-l0-Y2m" id="PKS-uA-63y"/>
-                        <outlet property="titleTextField" destination="qqv-V7-AUm" id="NBg-nd-5NP"/>
+                        <outlet property="titleTextField" destination="jt6-J0-9cK" id="CwP-8K-D71"/>
                         <outletCollection property="activityTypeButtons" destination="LPG-p0-etc" collectionClass="NSMutableArray" id="QOS-2Y-gbD"/>
                         <outletCollection property="activityTypeButtons" destination="pin-pF-HHh" collectionClass="NSMutableArray" id="CvM-0g-zau"/>
                         <outletCollection property="activityTypeButtons" destination="1ld-sI-dT3" collectionClass="NSMutableArray" id="nis-6R-btQ"/>

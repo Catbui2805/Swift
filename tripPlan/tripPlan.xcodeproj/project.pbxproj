@@ -24,6 +24,7 @@
 		F508BEC12278D50100650887 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508BEC02278D50100650887 /* DateExtension.swift */; };
 		F5F8B15D227976EA00480F6A /* AddActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F8B15C227976EA00480F6A /* AddActivityViewController.storyboard */; };
 		F5F8B15F2279770600480F6A /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B15E2279770600480F6A /* AddActivityViewController.swift */; };
+		F5F8B1612279994400480F6A /* ActivityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B1602279994400480F6A /* ActivityFunctions.swift */; };
 		F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB13D22276D605008782F9 /* AppDelegate.swift */; };
 		F5FB13DA2276D607008782F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13D92276D607008782F9 /* Assets.xcassets */; };
 		F5FB13DD2276D607008782F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB13DB2276D607008782F9 /* LaunchScreen.storyboard */; };
@@ -61,6 +62,7 @@
 		F508BEC02278D50100650887 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		F5F8B15C227976EA00480F6A /* AddActivityViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddActivityViewController.storyboard; sourceTree = "<group>"; };
 		F5F8B15E2279770600480F6A /* AddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
+		F5F8B1602279994400480F6A /* ActivityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFunctions.swift; sourceTree = "<group>"; };
 		F5FB13CF2276D605008782F9 /* tripPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB13D22276D605008782F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB13D92276D607008782F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				F508BEA92278000700650887 /* ActivityModel.swift */,
 				F508BEAB2278005B00650887 /* ActivityTypeEnum.swift */,
+				F5F8B1602279994400480F6A /* ActivityFunctions.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				F5FB13E72276DC33008782F9 /* TripModel.swift in Sources */,
 				F508BEC12278D50100650887 /* DateExtension.swift in Sources */,
 				F5FB13D32276D605008782F9 /* AppDelegate.swift in Sources */,
+				F5F8B1612279994400480F6A /* ActivityFunctions.swift in Sources */,
 				F508BEA72277FF1500650887 /* DayModel.swift in Sources */,
 				F5FB140B22772B7B008782F9 /* PopupUIView.swift in Sources */,
 				F5FB140D22772E19008782F9 /* AppUIButton.swift in Sources */,

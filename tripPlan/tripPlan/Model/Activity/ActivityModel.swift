@@ -23,3 +23,4 @@ struct ActivityModel {
         self.photo = photo
     }
 }
+

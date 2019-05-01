@@ -18,7 +18,7 @@ class AddActivityViewController: UIViewController {
     @IBOutlet weak var saveButton: AppUIButton!
     @IBOutlet weak var cancelButton: AppUIButton!
     
-    var doneSaving: ((DayModel) -> ())?
+    var doneSaving: ((Int, ActivityModel) -> ())?
     var tripIndex: Int!
     var tripModel: TripModel!
     
@@ -45,7 +45,19 @@ class AddActivityViewController: UIViewController {
     }
     
     @IBAction func saveTapped(_ sender: Any) {
+        titleTextField.rightViewMode = .never
+        guard titleTextField.hasValue, let newTitle = titleTextField.text else {
+            return
+        }
         let activityType: ActivityType = getSelectedActivityType()
+        
+        let dayIndex = dayViewPicker.selectedRow(inComponent: 0)
+        let activityModel = ActivityModel(title: newTitle, subTitle: subTitleTextField.text ?? "", activityType: activityType)
+        ActivityFunctions.createActivity(at: tripIndex, for: dayIndex, using: activityModel)
+        
+        if let doneSaving = doneSaving {
+            doneSaving(dayIndex, activityModel)
+        }
         
         dismiss(animated: true)
     }
