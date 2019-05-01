@@ -22,8 +22,8 @@ class ActivityTableViewCell: UITableViewCell {
         cardView.addShadowAndRoundedCorner()
         cardView.layer.backgroundColor = Theme.accentColor.cgColor
         
-        titleLabel.font = UIFont(name: Theme.bodyFontNameDemiBold, size: 15)
-        subTitleLabel.font = UIFont(name: Theme.bodyFontName, size: 15)
+        titleLabel.font = UIFont(name: Theme.bodyFontNameDemiBold, size: 16)
+        subTitleLabel.font = UIFont(name: Theme.bodyFontName, size: 16)
         
     }
     

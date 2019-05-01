@@ -74,10 +74,10 @@ class ActivitiesViewController: UIViewController {
             guard let self = self else {
                 return
             }
-            
-            //            self.tripModel?.dayModels.append(dayModel) //
-            let indexArray = [self.tripModel?.dayModels.count != nil ? (self.tripModel?.dayModels.count)! - 1 : 0]
+            self.tripModel?.dayModels.append(dayModel)
+            let indexArray = [self.tripModel?.dayModels.firstIndex(of: dayModel) ?? 0]
             self.tableView.insertSections(IndexSet(indexArray), with: UITableView.RowAnimation.automatic)
+//            self.tableView.reloadData()
         }
         present(vc, animated: true)
     }

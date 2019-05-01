@@ -26,6 +26,7 @@ class AddTripViewController: UIViewController {
         
         imageView.layer.cornerRadius = 10
         cameraBt.layer.cornerRadius = 10
+        cameraBt.tintColor = Theme.tintColor
         // dropshadow on title
         titleLabel.layer.shadowOpacity = 1
         titleLabel.layer.shadowColor = UIColor.white.cgColor

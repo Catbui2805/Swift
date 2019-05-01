@@ -69,12 +69,12 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-wI-iSY">
                                         <rect key="frame" x="308" y="4" width="46" height="46"/>
-                                        <color key="backgroundColor" red="0.893527925" green="0.24888256189999999" blue="0.23219209909999999" alpha="0.84877996580000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="d7m-NC-1Fe"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.893527925" green="0.24888256189999999" blue="0.23219209909999999" alpha="0.84877996580000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="camera2"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="addPhoto"/>
                                         <connections>
                                             <action selector="addPhoto:" destination="MJd-Be-JL6" eventType="touchUpInside" id="055-gV-TNg"/>
                                         </connections>
@@ -126,6 +126,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera2" width="48" height="48"/>
+        <image name="addPhoto" width="48" height="48"/>
     </resources>
 </document>
