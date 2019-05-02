@@ -46,6 +46,13 @@ class ActivitiesViewController: UIViewController {
         headerInSection = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell")?.contentView.bounds.height ?? 0
     }
     
+    
+    @IBAction func toggleEditMode(_ sender: UIBarButtonItem) {
+//        tableView.isEditing = !tableView.isEditing
+        tableView.isEditing.toggle()
+        sender.title = sender.title == "Edit" ? "Done" : "Edit"
+    }
+    
     @IBAction func addTapped(_ sender: UIButton) {
         let alert = UIAlertController(title: "Which would you like to add?", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         let dayAction = UIAlertAction(title: "Day", style: UIAlertAction.Style.default, handler: handleAddDay)
@@ -219,5 +226,24 @@ extension ActivitiesViewController: UITableViewDelegate, UITableViewDataSource {
         edit.backgroundColor = Theme.tableEditColor
         
         return UISwipeActionsConfiguration(actions: [edit])
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true 
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        // 1. Get the current activity
+        let activityModel = (tripModel?.dayModels[sourceIndexPath.section].activityModels[sourceIndexPath.row])!
+        
+        // 2. Delete activity form old location
+        tripModel?.dayModels[sourceIndexPath.section].activityModels.remove(at: sourceIndexPath.row)
+        
+        // 3. Inset activity into the new location
+        tripModel?.dayModels[destinationIndexPath.section].activityModels.insert(activityModel, at: destinationIndexPath.row)
+    
+        // 4. Update the data store
+        ActivityFunctions.reorderActivity(at: getTripIndex()!, oldDayIndex: sourceIndexPath.section, newDayIndex: destinationIndexPath.section, newActivityIndex: destinationIndexPath.row, activityModel: activityModel)
+        
     }
 }

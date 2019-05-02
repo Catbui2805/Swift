@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Activities View Controller-->
+        <!--Title-->
         <scene sceneID="Yd2-SC-fNc">
             <objects>
                 <viewController id="HYv-YP-2vX" customClass="ActivitiesViewController" customModule="tripPlan" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="yPG-Lc-8pY">
-                                    <rect key="frame" x="0.0" y="197.5" width="414" height="70"/>
+                                    <rect key="frame" x="0.0" y="198" width="414" height="70"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -80,7 +80,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityTableViewCell" rowHeight="80" id="odP-Mh-jdH" customClass="ActivityTableViewCell" customModule="tripPlan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="99.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="100" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="odP-Mh-jdH" id="v5d-mW-rRb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -180,6 +180,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DJu-di-wgK"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="vqY-tp-lpa">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="sTE-hV-kcA">
+                            <connections>
+                                <action selector="toggleEditMode:" destination="HYv-YP-2vX" id="9Eh-oA-utZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="zFO-WH-tiN" id="Vv3-7s-vHK"/>
                         <outlet property="backgroundImage" destination="T9O-6L-wTE" id="BOv-d6-Yy6"/>
