@@ -134,6 +134,13 @@
 			path = AddDayViewController;
 			sourceTree = "<group>";
 		};
+		F5B2C95B227B53640049C08C /* BusViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusViewController;
+			sourceTree = "<group>";
+		};
 		F5F8B15B2279769900480F6A /* AddActivityViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +209,7 @@
 				F508BEA02277EF3D00650887 /* ActivitiesViewController */,
 				F508BEB52278B3AF00650887 /* AddDayViewController */,
 				F5F8B15B2279769900480F6A /* AddActivityViewController */,
+				F5B2C95B227B53640049C08C /* BusViewController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
