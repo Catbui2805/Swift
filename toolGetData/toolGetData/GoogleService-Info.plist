@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>266684883737-b9kedi7sml1dl26ha26p32bo5fo7cc2l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.266684883737-b9kedi7sml1dl26ha26p32bo5fo7cc2l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2ENRkbE7MX-msyNpJwiGKkB6jCCiaN_E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>266684883737</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nguyentran.toolGetData</string>
+	<key>PROJECT_ID</key>
+	<string>chesse03-57f02</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chesse03-57f02.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:266684883737:ios:1f564978ebefafb9</string>
+	<key>DATABASE_URL</key>
+	<string>https://chesse03-57f02.firebaseio.com</string>
+</dict>
+</plist>
