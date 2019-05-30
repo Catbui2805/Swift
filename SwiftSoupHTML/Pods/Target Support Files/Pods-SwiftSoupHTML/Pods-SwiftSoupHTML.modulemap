@@ -1,0 +1,6 @@
+framework module Pods_SwiftSoupHTML {
+  umbrella header "Pods-SwiftSoupHTML-umbrella.h"
+
+  export *
+  module * { export * }
+}
