@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78BA2AA760316A3A8B004793 /* Pods_SwiftSoupHTML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3614015DA5B41F2AF63E8D8 /* Pods_SwiftSoupHTML.framework */; };
+		F556249522A02AC600674C9A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556249422A02AC600674C9A /* DetailViewController.swift */; };
 		F58F472F229D8CBE00D630E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58F472E229D8CBE00D630E8 /* AppDelegate.swift */; };
 		F58F4731229D8CBE00D630E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58F4730229D8CBE00D630E8 /* ViewController.swift */; };
 		F58F4734229D8CBE00D630E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58F4732229D8CBE00D630E8 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		2A4CE0C6514B72261C3A8AB1 /* Pods-SwiftSoupHTML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSoupHTML.debug.xcconfig"; path = "Target Support Files/Pods-SwiftSoupHTML/Pods-SwiftSoupHTML.debug.xcconfig"; sourceTree = "<group>"; };
 		A77AB56F28AE1C630014B508 /* Pods-SwiftSoupHTML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSoupHTML.release.xcconfig"; path = "Target Support Files/Pods-SwiftSoupHTML/Pods-SwiftSoupHTML.release.xcconfig"; sourceTree = "<group>"; };
 		E3614015DA5B41F2AF63E8D8 /* Pods_SwiftSoupHTML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSoupHTML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F556249422A02AC600674C9A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F58F472B229D8CBE00D630E8 /* SwiftSoupHTML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSoupHTML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58F472E229D8CBE00D630E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F58F4730229D8CBE00D630E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				F58F4737229D8CBF00D630E8 /* LaunchScreen.storyboard */,
 				F58F473A229D8CBF00D630E8 /* Info.plist */,
 				F5CACA50229EF33700069F14 /* PostTableViewCell.swift */,
+				F556249422A02AC600674C9A /* DetailViewController.swift */,
 			);
 			path = SwiftSoupHTML;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				F58F4731229D8CBE00D630E8 /* ViewController.swift in Sources */,
 				F58F472F229D8CBE00D630E8 /* AppDelegate.swift in Sources */,
 				F5CACA51229EF33700069F14 /* PostTableViewCell.swift in Sources */,
+				F556249522A02AC600674C9A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44QZYM48R7;
 				INFOPLIST_FILE = SwiftSoupHTML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44QZYM48R7;
 				INFOPLIST_FILE = SwiftSoupHTML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

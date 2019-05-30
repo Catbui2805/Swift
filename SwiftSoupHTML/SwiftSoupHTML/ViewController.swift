@@ -11,7 +11,7 @@ import SwiftSoup
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    typealias Item = (text: String, html: String, des: String)
+    typealias Item = (text: String, html: String, des: String, link: String)
     
     // current document
     var document: Document = Document.init("")
@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         self.tableView.estimatedRowHeight = UITableView.automaticDimension
         downloadHTML()
     }
-
-
+    
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -38,7 +38,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.titleText.text = items[indexPath.row].text
         cell.descriptionText.text = items[indexPath.row].des
         cell.dateText.text = items[indexPath.row].html
-        print("===>> url image \(items[indexPath.row].html)")
+        //        print("===>> url image \(items[indexPath.row].html)")
         let url = URL(string: items[indexPath.row].html)
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
@@ -51,6 +51,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 370
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let link = items[indexPath.row].link
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let detail = sb.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        detail.urlString = link
+        
+        //        "https://vnexpress.net/bong-da/bui-tien-dung-vang-mat-nguyen-manh-va-tuan-anh-du-king-s-cup-3929478.html?cvar=A"
+        
+        navigationController?.pushViewController(detail, animated: true)
+        
     }
     
 }
@@ -91,14 +103,42 @@ extension ViewController {
                 if text == "" || text.isEmpty {
                     continue
                 }
+                var link: String = ""
                 var aa = ""
-                let html = try element.outerHtml()
+                //                let html = try element.outerHtml()
                 let description = try element.select("p").first()?.text() ?? ""
-                print("element =>> \(element)")
+                //                print("element =>> \(element)")
+                // get image
                 for a in try element.select("img").array() {
                     aa = try a.attr("data-original")
                 }
-                items.append(Item(text: text, html: aa, des: description))
+                // get linl
+                if items.count < 1 {
+                    for b in try element.select("h1").array() {
+                        for c in try b.select("a") {
+                            print("==link \(c)")
+                            link = try c.attr("href")
+                            //                    print("===>>> link : \(link)")
+                            if link != "" {
+                                print("===>>> link : \(link)")
+                                break
+                            }
+                        }
+                    }
+                } else {
+                    for b in try element.select("h4").array() {
+                        for c in try b.select("a") {
+                            print("==link \(c)")
+                            link = try c.attr("href")
+                            //                    print("===>>> link : \(link)")
+                            if link != "" {
+                                print("===>>> link : \(link)")
+                                break
+                            }
+                        }
+                    }
+                }
+                items.append(Item(text: text, html: aa, des: description, link: link))
             }
             
         } catch let error {
