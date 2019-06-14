@@ -1,0 +1,6 @@
+framework module Pods_AlamofireHTTP_Json_web_api {
+  umbrella header "Pods-AlamofireHTTP Json web api-umbrella.h"
+
+  export *
+  module * { export * }
+}

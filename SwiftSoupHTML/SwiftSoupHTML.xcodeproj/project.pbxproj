@@ -15,6 +15,7 @@
 		F58F4736229D8CBF00D630E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58F4735229D8CBF00D630E8 /* Assets.xcassets */; };
 		F58F4739229D8CBF00D630E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58F4737229D8CBF00D630E8 /* LaunchScreen.storyboard */; };
 		F5CACA51229EF33700069F14 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CACA50229EF33700069F14 /* PostTableViewCell.swift */; };
+		F5F99CFC22A97E9A00FBB6A0 /* webViewStackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F99CFB22A97E9A00FBB6A0 /* webViewStackViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F58F4738229D8CBF00D630E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F58F473A229D8CBF00D630E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5CACA50229EF33700069F14 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		F5F99CFB22A97E9A00FBB6A0 /* webViewStackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewStackViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				F58F473A229D8CBF00D630E8 /* Info.plist */,
 				F5CACA50229EF33700069F14 /* PostTableViewCell.swift */,
 				F556249422A02AC600674C9A /* DetailViewController.swift */,
+				F5F99CFB22A97E9A00FBB6A0 /* webViewStackViewViewController.swift */,
 			);
 			path = SwiftSoupHTML;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58F4731229D8CBE00D630E8 /* ViewController.swift in Sources */,
+				F5F99CFC22A97E9A00FBB6A0 /* webViewStackViewViewController.swift in Sources */,
 				F58F472F229D8CBE00D630E8 /* AppDelegate.swift in Sources */,
 				F5CACA51229EF33700069F14 /* PostTableViewCell.swift in Sources */,
 				F556249522A02AC600674C9A /* DetailViewController.swift in Sources */,
