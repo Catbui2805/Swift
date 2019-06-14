@@ -41,7 +41,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         //        print("===>> url image \(items[indexPath.row].html)")
         let url = URL(string: items[indexPath.row].html)
         DispatchQueue.global().async {
-            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            guard let url = url else { return }
+            let data = try? Data(contentsOf: url) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
             DispatchQueue.main.async {
                 cell.picture.image = UIImage(data: data!)
             }
