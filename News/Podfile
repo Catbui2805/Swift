@@ -10,7 +10,8 @@ target 'News' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Kingfisher'
-
+  pod 'Parchment'
+  
   target 'NewsTests' do
     inherit! :search_paths
     # Pods for testing

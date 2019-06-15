@@ -18,19 +18,14 @@ final class Configure {
         self.infoDictionary = Bundle.main.infoDictionary ?? [:]
     }
     
-    var baseUrl: String {
-        guard let url = infoDictionary["BASE_URL"] as? String else {
-            return ""
-        }
-        
+    var baseURL: String {
+        guard let url = infoDictionary["BASE_URL"] as? String else { return "" }
         return url
     }
     
     var versionApp: String {
-        guard let version = infoDictionary["VERSION"] as? String else {
-            return ""
-        }
-        
+        guard let version = infoDictionary["VERSION"] as? String else { return "" }
         return version
     }
 }
+

@@ -99,7 +99,7 @@ enum Router: URLRequestConvertible {
     }
     
     func asURLRequest() throws -> URLRequest {
-        guard let url = URL(string: Configure.share.baseUrl) else {
+        guard let url = URL(string: Router.baseURLString) else {
             throw NetworkErrorType.HTTP_ERROR
         }
         
