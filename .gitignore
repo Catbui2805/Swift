@@ -1,0 +1,256 @@
+# Created by https://www.gitignore.io/api/swift,swiftpm,swiftpackagemanager
+# Edit at https://www.gitignore.io/?templates=swift,swiftpm,swiftpackagemanager
+
+### Swift ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+.build/
+
+# CocoaPods
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# Pods/
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+### SwiftPackageManager ###
+Packages
+xcuserdata
+*.xcodeproj
+
+### SwiftPM ###
+
+# End of https://www.gitignore.io/api/swift,swiftpm,swiftpackagemanager
+News/News.xcworkspace/contents.xcworkspacedata
+News/News.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+News/Pods/Manifest.lock
+News/Pods/Alamofire/LICENSE
+News/Pods/Alamofire/README.md
+News/Pods/Alamofire/Source/AFError.swift
+News/Pods/Alamofire/Source/Alamofire.swift
+News/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+News/Pods/Alamofire/Source/MultipartFormData.swift
+News/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+News/Pods/Alamofire/Source/Notifications.swift
+News/Pods/Alamofire/Source/ParameterEncoding.swift
+News/Pods/Alamofire/Source/Request.swift
+News/Pods/Alamofire/Source/Response.swift
+News/Pods/Alamofire/Source/ResponseSerialization.swift
+News/Pods/Alamofire/Source/Result.swift
+News/Pods/Alamofire/Source/ServerTrustPolicy.swift
+News/Pods/Alamofire/Source/SessionDelegate.swift
+News/Pods/Alamofire/Source/SessionManager.swift
+News/Pods/Alamofire/Source/TaskDelegate.swift
+News/Pods/Alamofire/Source/Timeline.swift
+News/Pods/Alamofire/Source/Validation.swift
+News/Pods/Kingfisher/LICENSE
+News/Pods/Kingfisher/README.md
+News/Pods/Kingfisher/Sources/Kingfisher.h
+News/Pods/Kingfisher/Sources/Cache/CacheSerializer.swift
+News/Pods/Kingfisher/Sources/Cache/DiskStorage.swift
+News/Pods/Kingfisher/Sources/Cache/FormatIndicatedCacheSerializer.swift
+News/Pods/Kingfisher/Sources/Cache/ImageCache.swift
+News/Pods/Kingfisher/Sources/Cache/MemoryStorage.swift
+News/Pods/Kingfisher/Sources/Cache/Storage.swift
+News/Pods/Kingfisher/Sources/Extensions/ImageView+Kingfisher.swift
+News/Pods/Kingfisher/Sources/Extensions/UIButton+Kingfisher.swift
+News/Pods/Kingfisher/Sources/General/Deprecated.swift
+News/Pods/Kingfisher/Sources/General/Kingfisher.swift
+News/Pods/Kingfisher/Sources/General/KingfisherError.swift
+News/Pods/Kingfisher/Sources/General/KingfisherManager.swift
+News/Pods/Kingfisher/Sources/General/KingfisherOptionsInfo.swift
+News/Pods/Kingfisher/Sources/General/ImageSource/ImageDataProvider.swift
+News/Pods/Kingfisher/Sources/General/ImageSource/Resource.swift
+News/Pods/Kingfisher/Sources/General/ImageSource/Source.swift
+News/Pods/Kingfisher/Sources/Image/Filter.swift
+News/Pods/Kingfisher/Sources/Image/GIFAnimatedImage.swift
+News/Pods/Kingfisher/Sources/Image/Image.swift
+News/Pods/Kingfisher/Sources/Image/ImageDrawing.swift
+News/Pods/Kingfisher/Sources/Image/ImageFormat.swift
+News/Pods/Kingfisher/Sources/Image/ImageProcessor.swift
+News/Pods/Kingfisher/Sources/Image/ImageProgressive.swift
+News/Pods/Kingfisher/Sources/Image/ImageTransition.swift
+News/Pods/Kingfisher/Sources/Image/Placeholder.swift
+News/Pods/Kingfisher/Sources/Networking/AuthenticationChallengeResponsable.swift
+News/Pods/Kingfisher/Sources/Networking/ImageDataProcessor.swift
+News/Pods/Kingfisher/Sources/Networking/ImageDownloader.swift
+News/Pods/Kingfisher/Sources/Networking/ImageDownloaderDelegate.swift
+News/Pods/Kingfisher/Sources/Networking/ImageModifier.swift
+News/Pods/Kingfisher/Sources/Networking/ImagePrefetcher.swift
+News/Pods/Kingfisher/Sources/Networking/RedirectHandler.swift
+News/Pods/Kingfisher/Sources/Networking/RequestModifier.swift
+News/Pods/Kingfisher/Sources/Networking/SessionDataTask.swift
+News/Pods/Kingfisher/Sources/Networking/SessionDelegate.swift
+News/Pods/Kingfisher/Sources/Utility/Box.swift
+News/Pods/Kingfisher/Sources/Utility/CallbackQueue.swift
+News/Pods/Kingfisher/Sources/Utility/Delegate.swift
+News/Pods/Kingfisher/Sources/Utility/ExtensionHelpers.swift
+News/Pods/Kingfisher/Sources/Utility/Result.swift
+News/Pods/Kingfisher/Sources/Utility/Runtime.swift
+News/Pods/Kingfisher/Sources/Utility/SizeExtensions.swift
+News/Pods/Kingfisher/Sources/Utility/String+MD5.swift
+News/Pods/Kingfisher/Sources/Views/AnimatedImageView.swift
+News/Pods/Kingfisher/Sources/Views/Indicator.swift
+News/Pods/SwiftSoup/LICENSE
+News/Pods/SwiftSoup/README.md
+News/Pods/SwiftSoup/Sources/ArrayExt.swift
+News/Pods/SwiftSoup/Sources/Attribute.swift
+News/Pods/SwiftSoup/Sources/Attributes.swift
+News/Pods/SwiftSoup/Sources/BooleanAttribute.swift
+News/Pods/SwiftSoup/Sources/CharacterExt.swift
+News/Pods/SwiftSoup/Sources/CharacterReader.swift
+News/Pods/SwiftSoup/Sources/Cleaner.swift
+News/Pods/SwiftSoup/Sources/Collector.swift
+News/Pods/SwiftSoup/Sources/CombiningEvaluator.swift
+News/Pods/SwiftSoup/Sources/Comment.swift
+News/Pods/SwiftSoup/Sources/Connection.swift
+News/Pods/SwiftSoup/Sources/DataNode.swift
+News/Pods/SwiftSoup/Sources/DataUtil.swift
+News/Pods/SwiftSoup/Sources/Document.swift
+News/Pods/SwiftSoup/Sources/DocumentType.swift
+News/Pods/SwiftSoup/Sources/Element.swift
+News/Pods/SwiftSoup/Sources/Elements.swift
+News/Pods/SwiftSoup/Sources/Entities.swift
+News/Pods/SwiftSoup/Sources/Evaluator.swift
+News/Pods/SwiftSoup/Sources/Exception.swift
+News/Pods/SwiftSoup/Sources/FormElement.swift
+News/Pods/SwiftSoup/Sources/HtmlTreeBuilder.swift
+News/Pods/SwiftSoup/Sources/HtmlTreeBuilderState.swift
+News/Pods/SwiftSoup/Sources/HttpStatusException.swift
+News/Pods/SwiftSoup/Sources/Node.swift
+News/Pods/SwiftSoup/Sources/NodeTraversor.swift
+News/Pods/SwiftSoup/Sources/NodeVisitor.swift
+News/Pods/SwiftSoup/Sources/OrderedDictionary.swift
+News/Pods/SwiftSoup/Sources/OrderedSet.swift
+News/Pods/SwiftSoup/Sources/ParseError.swift
+News/Pods/SwiftSoup/Sources/ParseErrorList.swift
+News/Pods/SwiftSoup/Sources/Parser.swift
+News/Pods/SwiftSoup/Sources/ParseSettings.swift
+News/Pods/SwiftSoup/Sources/Pattern.swift
+News/Pods/SwiftSoup/Sources/QueryParser.swift
+News/Pods/SwiftSoup/Sources/Selector.swift
+News/Pods/SwiftSoup/Sources/SerializationException.swift
+News/Pods/SwiftSoup/Sources/SimpleDictionary.swift
+News/Pods/SwiftSoup/Sources/StreamReader.swift
+News/Pods/SwiftSoup/Sources/String.swift
+News/Pods/SwiftSoup/Sources/StringBuilder.swift
+News/Pods/SwiftSoup/Sources/StringUtil.swift
+News/Pods/SwiftSoup/Sources/StructuralEvaluator.swift
+News/Pods/SwiftSoup/Sources/SwiftSoup.swift
+News/Pods/SwiftSoup/Sources/Tag.swift
+News/Pods/SwiftSoup/Sources/TextNode.swift
+News/Pods/SwiftSoup/Sources/Token.swift
+News/Pods/SwiftSoup/Sources/Tokeniser.swift
+News/Pods/SwiftSoup/Sources/TokeniserState.swift
+News/Pods/SwiftSoup/Sources/TokenQueue.swift
+News/Pods/SwiftSoup/Sources/TreeBuilder.swift
+News/Pods/SwiftSoup/Sources/UnicodeScalar.swift
+News/Pods/SwiftSoup/Sources/Validate.swift
+News/Pods/SwiftSoup/Sources/Whitelist.swift
+News/Pods/SwiftSoup/Sources/XmlDeclaration.swift
+News/Pods/SwiftSoup/Sources/XmlTreeBuilder.swift
+News/Pods/SwiftyJSON/LICENSE
+News/Pods/SwiftyJSON/README.md
+News/Pods/SwiftyJSON/Source/SwiftyJSON/SwiftyJSON.swift
+News/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+News/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+News/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+News/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+News/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+News/Pods/Target Support Files/Alamofire/Alamofire.xcconfig
+News/Pods/Target Support Files/Kingfisher/Kingfisher-dummy.m
+News/Pods/Target Support Files/Kingfisher/Kingfisher-Info.plist
+News/Pods/Target Support Files/Kingfisher/Kingfisher-prefix.pch
+News/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h
+News/Pods/Target Support Files/Kingfisher/Kingfisher.modulemap
+News/Pods/Target Support Files/Kingfisher/Kingfisher.xcconfig
+News/Pods/Target Support Files/Pods-News/Pods-News-acknowledgements.markdown
+News/Pods/Target Support Files/Pods-News/Pods-News-acknowledgements.plist
+News/Pods/Target Support Files/Pods-News/Pods-News-dummy.m
+News/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh
+News/Pods/Target Support Files/Pods-News/Pods-News-Info.plist
+News/Pods/Target Support Files/Pods-News/Pods-News-umbrella.h
+News/Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig
+News/Pods/Target Support Files/Pods-News/Pods-News.modulemap
+News/Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests-acknowledgements.markdown
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests-acknowledgements.plist
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests-dummy.m
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests-Info.plist
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests-umbrella.h
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests.debug.xcconfig
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests.modulemap
+News/Pods/Target Support Files/Pods-NewsTests/Pods-NewsTests.release.xcconfig
+News/Pods/Target Support Files/SwiftSoup/SwiftSoup-dummy.m
+News/Pods/Target Support Files/SwiftSoup/SwiftSoup-Info.plist
+News/Pods/Target Support Files/SwiftSoup/SwiftSoup-prefix.pch
+News/Pods/Target Support Files/SwiftSoup/SwiftSoup-umbrella.h
+News/Pods/Target Support Files/SwiftSoup/SwiftSoup.modulemap
+News/Pods/Target Support Files/SwiftSoup/SwiftSoup.xcconfig
+News/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-dummy.m
+News/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist
+News/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch
+News/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h
+News/Pods/Target Support Files/SwiftyJSON/SwiftyJSON.modulemap
+News/Pods/Target Support Files/SwiftyJSON/SwiftyJSON.xcconfig

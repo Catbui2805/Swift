@@ -1,0 +1,12 @@
+//
+//  Dev.xcconfig
+//  News
+//
+//  Created by Nguyen Tran Cong on 6/15/19.
+//  Copyright © 2019 Nguyen Tran. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+VERSION = Dev - V1.0
+BASE_URL = https:/$()/divedeep.azurewebsites.net
