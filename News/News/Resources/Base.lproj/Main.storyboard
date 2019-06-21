@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--ForYouView-->
+        <!--ForYouViewController-->
         <scene sceneID="0TI-ok-xni">
             <objects>
-                <viewControllerPlaceholder storyboardName="ForYouView" id="aD9-SR-R8J" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ForYouViewController" id="aD9-SR-R8J" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="For You" image="library_black" id="1Ji-Mj-Xc4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLX-tf-iAF" userLabel="First Responder" sceneMemberID="firstResponder"/>

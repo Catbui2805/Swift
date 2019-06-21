@@ -29,21 +29,24 @@ class HeadlinesViewController: UIViewController {
     ]
     
     
-    var city: String = ""
+    let pagingViewController = PagingViewController<PagingIndexItem>()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationController()
+//        self.navigationController!.hidesBarsOnSwipe = true
+
         
-//
-        let pagingViewController = PagingViewController<PagingIndexItem>()
+        
         pagingViewController.dataSource = self
         pagingViewController.delegate = self
         
-        // Add the paging view controller as a child view controller and
-        // contrain it to all edges.
+        let topBarHeight = UIApplication.shared.statusBarFrame.size.height +
+            (self.navigationController?.navigationBar.frame.height ?? 0.0)
+        
         addChild(pagingViewController)
         view.addSubview(pagingViewController.view)
-        view.constrainToEdges(pagingViewController.view)
+        view.constrainToEdges(pagingViewController.view,
+                              topBarHeight)
         pagingViewController.didMove(toParent: self)
     }
     
@@ -79,8 +82,10 @@ extension HeadlinesViewController: PagingViewControllerDataSource {
     }
     
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
-//        return CityViewController(title: cities[index])
-        return ForYouViewController()
+        
+        let sb = UIStoryboard(name: "ViewByCategoriesViewController", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! ViewByCategoriesViewController
+        return vc
     }
     
     func numberOfViewControllers<T>(in: PagingViewController<T>) -> Int {

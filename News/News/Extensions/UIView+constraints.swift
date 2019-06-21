@@ -59,7 +59,7 @@ extension UIView {
         
     }
     
-    func constrainToEdges(_ subview: UIView) {
+    func constrainToEdges(_ subview: UIView, _ height: CGFloat) {
         
         subview.translatesAutoresizingMaskIntoConstraints = false
         
@@ -70,7 +70,7 @@ extension UIView {
             toItem: self,
             attribute: .top,
             multiplier: 1.0,
-            constant: 60)
+            constant: height)
         
         let bottomConstraint = NSLayoutConstraint(
             item: subview,
